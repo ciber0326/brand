@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    ></meta>
+
+    <title>Document</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    ></link>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="crossorigin"
+    ></link>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet"
+    ></link>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/font.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/reset.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/layout/header.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/common.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/front.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./assets/css/layout/footer.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    ></link>
+</head>
+
+<body>
+    <!-- <div id="loader">
+        <video
+            autoplay="autoplay"
+            muted="muted"
+            loop="loop"
+            playsinline="playsinline"
+            id="loader-video"
+        >
+            <source
+                src="./assets/videos/loader.mp4"
+                type="video/mp4"
+            >
+                Your browser does not support the video tag.
+            </source>
+        </video>
+    </div> -->
+
+    <header
+        id="masthead"
+        class="site-header"
+    >
+        <div class="h-container">
+            <div class="h-wrapper">
+                <a href="javascript:;">
+                    <img
+                        src="./assets/images/logo.png"
+                        alt="site-logo"
+                    >
+                </a>
+
+                <nav
+                    id="js-global-nav"
+                    class="p-global-nav"
+                >
+                    <ul
+                        id="primary-menu"
+                        class="primary-menu flex"
+                    >
+                        <li
+                            id="menu-item-44"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"
+                        >
+                            <a href="http://localhost/wordpress/concept/">
+                                COMPANY
+
+                                <span class="p-global-nav__toggle"></span>
+                            </a>
+                        </li>
+
+                        <li
+                            id="menu-item-45"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45"
+                        >
+                            <a href="http://localhost/wordpress/content/">
+                                SERVICE
+
+                                <span class="p-global-nav__toggle"></span>
+                            </a>
+                        </li>
+
+                        <li
+                            id="menu-item-48"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48"
+                        >
+                            <a href="http://localhost/wordpress/news">
+                                NEWS
+
+                                <span class="p-global-nav__toggle"></span>
+                            </a>
+                        </li>
+
+                        <li
+                            id="menu-item-512"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-512"
+                        >
+                            <a href="http://localhost/wordpress/saiyo/">
+                                RECRUIT
+
+                                <span class="p-global-nav__toggle"></span>
+                            </a>
+                        </li>
+
+                        <li
+                            id="menu-item-49"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49"
+                        >
+                            <a href="http://localhost/wordpress/contact/">
+                                CONTACT
+
+                                <span class="p-global-nav__toggle"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="topPage">
+        <section class="top-hero">
+            <div class="container relative">
+                <div
+                    class="flex justify-between"
+                    id="titleWrapper"
+                >
+                    <div class="site-title">
+                        <h1>
+                            <span class="font-en weight-900">
+                                CREATE TRENDS
+
+                                <br>
+                                AND ESTABLISH
+
+                                <br>
+                                NEW TRADITIONS
+                            </span>
+
+                            <br>
+                            トレンドを生み出し、新たなトラディションを築く
+                        </h1>
+                    </div>
+
+                    <video
+                        autoplay="autoplay"
+                        muted="muted"
+                        loop="loop"
+                        playsinline="playsinline"
+                        id="top-video"
+                    >
+                        <source
+                            src="./assets/videos/loader.mp4"
+                            type="video/mp4"
+                        >
+                            Your browser does not support the video tag.
+                        </source>
+                    </video>
+
+                    <div class="page_scroll absolute">
+                        <p class="page_scroll__text font-en">Scroll Down</p>
+
+                        <div class="page_scroll-arrow">
+                            <img
+                                alt="↓"
+                                width="28"
+                                height="30"
+                                src="./assets/images/scroll_down.svg"
+                                style="color: transparent;"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img
+                src="./assets/images/hero.png"
+                alt="hero_img"
+                class="ml-auto mr-0 block"
+            >
+        </section>
+
+        <section class="sec-what-we-do relative">
+            <div class="container">
+                <p class="font-en relative subtitle">What We Do</p>
+
+                <h2>
+                    <span class="font-en">anew</span>
+
+                    =新たな価値の創出
+                </h2>
+
+                <p class="desc-what-we-do">
+                    ANEWとは英語で「新たに」という意味を持ちます。私たちは商品を通じて新たな価値を提供し、お客様に「喜び」「幸せ」「笑顔」を届けたいと考えています。お客様、スタッフ、関係企業様との信頼関係を深め、関わる全ての人が幸せになれる企業を目指しています。
+
+                    <br>
+                    <br>
+                    常にお客様の期待を超えることで、ファンを増やし続けたいと信じています。これからも多角的な挑戦を通じて、新しい価値とサービスを創出し続ける企業を目指します。ANEWには、創業メンバーのこの強い想いが込められています。
+                </p>
+
+                <a
+                    href="javascript:;"
+                    class="block ml-auto mr-0 w-fit href-more"
+                >
+                    <div class="btn-more flex font-en y-center">
+                        <span class="btn-txt relative">see more</span>
+
+                        <span class="btn-svg-grp">
+                            <div class="btn-svg-wrapper relative">
+                                <svg
+                                    viewBox="0 0 10 9"
+                                    fill="none"
+                                    class="absolute"
+                                    id="firstArr"
+                                >
+                                    <path
+                                        d="M7.43898 5.04124L0.15 5.04124L0.15 3.95876L7.43898 3.95876L7.79834 3.95876L7.54563 3.70328L4.8234 0.951202L5.55576 0.213211L9.78918 4.5L5.5555 8.78705L4.82357 8.05309L7.54571 5.29664L7.79793 5.04124L7.43898 5.04124Z"
+                                        fill="#1888F0"
+                                        stroke-width="0.3"
+                                    ></path>
+                                </svg>
+
+                                <svg
+                                    viewBox="0 0 10 9"
+                                    fill="none"
+                                    class="relative"
+                                    id="secArr"
+                                >
+                                    <path
+                                        d="M7.43898 5.04124L0.15 5.04124L0.15 3.95876L7.43898 3.95876L7.79834 3.95876L7.54563 3.70328L4.8234 0.951202L5.55576 0.213211L9.78918 4.5L5.5555 8.78705L4.82357 8.05309L7.54571 5.29664L7.79793 5.04124L7.43898 5.04124Z"
+                                        fill="white"
+                                        stroke="#1888F0"
+                                        stroke-width="0.3"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <img
+                src="./assets/images/top/top_rotate.svg"
+                alt="top-rotate"
+                class="absolute"
+            >
+        </section>
+
+        <section class="sec-gallery-company">
+            <div class="gallery-wrapper">
+                <img
+                    src="./assets/images/top/comapny.jpg"
+                    alt="gallery-top"
+                >
+
+                <img
+                    src="./assets/images/top/comapny.jpg"
+                    alt="gallery-top"
+                >
+
+                <img
+                    src="./assets/images/top/comapny.jpg"
+                    alt="gallery-top"
+                >
+
+                <img
+                    src="./assets/images/top/comapny.jpg"
+                    alt="gallery-top"
+                >
+            </div>
+        </section>
+
+        <section class="sec-news">
+            <div class="container">
+                <div class="sec-news-wrapper">
+                    <div class="sec-news-title">
+                        <h2 class="font-en">
+                            NEWS
+
+                            <br>
+
+                            <span class="font-ja weight-300">お知らせ</span>
+                        </h2>
+
+                        <a
+                            href="javascript:;"
+                            class="btn-view-all"
+                        >View All</a>
+                    </div>
+
+                    <ul class="news-lists">
+                        <li>
+                            <a href="javascript:;">
+                                <img
+                                    src="./assets/images/top/news_fallback.png"
+                                    alt="news_item"
+                                >
+                            </a>
+
+                            <div class="news-item-data">
+                                <span class="news-updated">2024.08.21</span>
+
+                                <a
+                                    href="javascript:;"
+                                    class="news-item-title"
+                                >
+                                    ブロイグタイトルが出力されます: DXする新サ ービス「APURI for DX_NAVI_LOCAL」をリリー ス。
+                                </a>
+                            </div>
+
+                            <div class="comment">
+                                <a
+                                    class="ctg"
+                                    href="javascript:;"
+                                >
+                                    カテゴリ:
+
+                                    <span>企業情報</span>
+                                </a>
+
+                                <a
+                                    class="tag"
+                                    href="javascript:;"
+                                >
+                                    #
+
+                                    <span>tagugahairimasu</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <img
+                                    src="./assets/images/top/news_fallback.png"
+                                    alt="news_item"
+                                >
+                            </a>
+
+                            <div class="news-item-data">
+                                <span class="news-updated">2024.08.21</span>
+
+                                <a
+                                    href="javascript:;"
+                                    class="news-item-title"
+                                >
+                                    ブロイグタイトルが出力されます: DXする新サ ービス「APURI for DX_NAVI_LOCAL」をリリー ス。
+                                </a>
+                            </div>
+
+                            <div class="comment">
+                                <a
+                                    class="ctg"
+                                    href="javascript:;"
+                                >
+                                    カテゴリ:
+
+                                    <span>企業情報</span>
+                                </a>
+
+                                <a
+                                    class="tag"
+                                    href="javascript:;"
+                                >
+                                    #
+
+                                    <span>tagugahairimasu</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <img
+                                    src="./assets/images/top/news_fallback.png"
+                                    alt="news_item"
+                                >
+                            </a>
+
+                            <div class="news-item-data">
+                                <span class="news-updated">2024.08.21</span>
+
+                                <a
+                                    href="javascript:;"
+                                    class="news-item-title"
+                                >
+                                    ブロイグタイトルが出力されます: DXする新サ ービス「APURI for DX_NAVI_LOCAL」をリリー ス。
+                                </a>
+                            </div>
+
+                            <div class="comment">
+                                <a
+                                    class="ctg"
+                                    href="javascript:;"
+                                >
+                                    カテゴリ:
+
+                                    <span>企業情報</span>
+                                </a>
+
+                                <a
+                                    class="tag"
+                                    href="javascript:;"
+                                >
+                                    #
+
+                                    <span>tagugahairimasu</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                <img
+                                    src="./assets/images/top/news_fallback.png"
+                                    alt="news_item"
+                                >
+                            </a>
+
+                            <div class="news-item-data">
+                                <span class="news-updated">2024.08.21</span>
+
+                                <a
+                                    href="javascript:;"
+                                    class="news-item-title"
+                                >
+                                    ブロイグタイトルが出力されます: DXする新サ ービス「APURI for DX_NAVI_LOCAL」をリリー ス。
+                                </a>
+                            </div>
+
+                            <div class="comment">
+                                <a
+                                    class="ctg"
+                                    href="javascript:;"
+                                >
+                                    カテゴリ:
+
+                                    <span>企業情報</span>
+                                </a>
+
+                                <a
+                                    class="tag"
+                                    href="javascript:;"
+                                >
+                                    #
+
+                                    <span>tagugahairimasu</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-service">
+            <div class="container">
+                <h2 class="font-en">SERVICE</h2>
+
+                <ul class="service-lists">
+                    <li>
+                        <a href="javascript:;">
+                            <div class="service-item-header">
+                                SERVICE
+
+                                <span class="clr-blue">01</span>
+                            </div>
+
+                            <img
+                                src="./assets/images/top/news_fallback.png"
+                                alt="service-img"
+                            >
+
+                            <div class="service-item-footer">事業内容（EC通販事業）</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="service-item-header">
+                                SERVICE
+
+                                <span class="clr-blue">02</span>
+                            </div>
+
+                            <img
+                                src="./assets/images/top/news_fallback.png"
+                                alt="service-img"
+                            >
+
+                            <div class="service-item-footer">事業内容（ECコンサルティング＆総合支援事業）</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="service-item-header">
+                                SERVICE
+
+                                <span class="clr-blue">01</span>
+                            </div>
+
+                            <img
+                                src="./assets/images/top/news_fallback.png"
+                                alt="service-img"
+                            >
+
+                            <div class="service-item-footer">事業内容（動画・ビジュアル制作事業）</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="service-item-header">
+                                SERVICE
+
+                                <span class="clr-blue">04</span>
+                            </div>
+
+                            <img
+                                src="./assets/images/top/news_fallback.png"
+                                alt="service-img"
+                            >
+
+                            <div class="service-item-footer">事業内容（撮影スタジオ・機材レンタル事業）</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <div class="service-item-header">
+                                SERVICE
+
+                                <span class="clr-blue">01</span>
+                            </div>
+
+                            <img
+                                src="./assets/images/top/news_fallback.png"
+                                alt="service-img"
+                            >
+
+                            <div class="service-item-footer">事業内容（リユース事業）</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sec-member">
+            <div class="container">
+                <h2 class="weight-900 font-en">
+                    MEMBER
+
+                    <br>
+
+                    <span class="font-ja weight-300">メンバー紹介</span>
+                </h2>
+
+                <ul class="member-lists">
+                    <li>
+                        <a href="javascript:;">
+                            <img
+                                src="./assets/images/top/member_fallback.jpg"
+                                alt="member_fallback"
+                                class="member-photo"
+                            >
+                        </a>
+
+                        <div class="member-desc">
+                            <a href="javascript:;">RYOHEI YANAKA -MD BUYER-</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <img
+                                src="./assets/images/top/member_fallback.jpg"
+                                alt="member_fallback"
+                                class="member-photo"
+                            >
+                        </a>
+
+                        <div class="member-desc">
+                            <a href="javascript:;">YUKI KOSIMOTO -BUYER-</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;">
+                            <img
+                                src="./assets/images/top/member_fallback.jpg"
+                                alt="member_fallback"
+                                class="member-photo"
+                            >
+                        </a>
+
+                        <div class="member-desc">
+                            <a href="javascript:;">HIKARU SAKURAI-VMD BUYER-</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sec-employee relative">
+            <div class="swiper-container gallery-employee">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img
+                            src="./assets/images/top/employee (1).jpg"
+                            alt="Member 1"
+                        >
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img
+                            src="./assets/images/top/employee (2).jpg"
+                            alt="Member 2"
+                        >
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img
+                            src="./assets/images/top/employee (3).jpg"
+                            alt="Member 3"
+                        >
+                    </div>
+
+                    <!-- Add more slides as needed -->
+                </div>
+            </div>
+
+            <div class="employee-content absolute">
+                <h2 class="font-en">Join Our Team</h2>
+
+                <p>
+                    スタメンは、一緒に「挑戦」する仲間を求めています。
+
+                    <br>
+                    ビジネス・プロダクト・コーポレートの様々な職種で採用を強化中です。
+
+                    <br>
+                    募集要項をぜひご覧ください。
+                </p>
+
+                <a
+                    href="javascript:;"
+                    class="block w-fit href-more"
+                >
+                    <div class="btn-more flex font-en y-center">
+                        <span class="btn-txt relative clr-white">see more</span>
+
+                        <span class="btn-svg-grp">
+                            <div class="btn-svg-wrapper relative">
+                                <svg
+                                    viewBox="0 0 10 9"
+                                    fill="none"
+                                    class="absolute"
+                                    id="firstArr"
+                                >
+                                    <path
+                                        d="M7.43898 5.04124L0.15 5.04124L0.15 3.95876L7.43898 3.95876L7.79834 3.95876L7.54563 3.70328L4.8234 0.951202L5.55576 0.213211L9.78918 4.5L5.5555 8.78705L4.82357 8.05309L7.54571 5.29664L7.79793 5.04124L7.43898 5.04124Z"
+                                        fill="#1888F0"
+                                        stroke-width="0.3"
+                                    ></path>
+                                </svg>
+
+                                <svg
+                                    viewBox="0 0 10 9"
+                                    fill="none"
+                                    class="relative"
+                                    id="secArr"
+                                >
+                                    <path
+                                        d="M7.43898 5.04124L0.15 5.04124L0.15 3.95876L7.43898 3.95876L7.79834 3.95876L7.54563 3.70328L4.8234 0.951202L5.55576 0.213211L9.78918 4.5L5.5555 8.78705L4.82357 8.05309L7.54571 5.29664L7.79793 5.04124L7.43898 5.04124Z"
+                                        fill="white"
+                                        stroke="#1888F0"
+                                        stroke-width="0.3"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </span>
+                    </div>
+                </a>
+
+                <div class="career_indicator absolute">
+                    <p class="career_indicator__text">Career</p>
+
+                    <div class="career_indicator-bar">
+                        <div class="career_indicator-thumbs"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="h-container">
+            <div class="f-wrapper">
+                <div class="f-col-wrapper">
+                    <div class="f-col-1">
+                        <a href="javascript:;">
+                            <img
+                                src="./assets/images/logo.png"
+                                alt="footer-logo"
+                            >
+                        </a>
+                    </div>
+
+                    <div class="f-col-2">
+                        <a href="javascript:;">Service</a>
+
+                        <a href="javascript:;">Culture</a>
+
+                        <a href="javascript:;">Career</a>
+
+                        <a href="javascript:;">News</a>
+
+                        <a href="javascript:;">Contact</a>
+                    </div>
+                </div>
+
+                
+                <a href="javascript:;" class="block ml-auto mr-0 w-fit">情報セキュリティ方針とプライバシーポリシー</a>
+                <p class="text-center copyright">
+                    Copyright © 2024 株式会社スタメン |
+                    stmn.inc. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- #main -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/style.js"></script>
+</body>
+</html>

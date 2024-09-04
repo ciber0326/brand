@@ -1,0 +1,78 @@
+.zen-kaku-gothic-antique-light {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .zen-kaku-gothic-antique-regular {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .zen-kaku-gothic-antique-medium {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .zen-kaku-gothic-antique-bold {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .zen-kaku-gothic-antique-black {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  .inter-light {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+  }
+  
+  .inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+  }
+  
+  .inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+  }
+  
+  .inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Semi-Bold weight */
+    font-style: normal;
+  }
+  
+  .inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+  }
+  
+  .inter-extrabold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800; /* Extra-Bold weight */
+    font-style: normal;
+  }
+  
+  .inter-black {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Black weight */
+    font-style: normal;
+  }
+  

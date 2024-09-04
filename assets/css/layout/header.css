@@ -1,0 +1,20 @@
+header {
+    padding: 20px 0;
+    font-family: var(--font-en);
+}
+.h-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img[alt="site-logo"] {
+    width: 140px;
+}
+.primary-menu {
+    column-gap: 20px;
+}
+.primary-menu li > a {
+    padding: 10px 10px;
+    font-size: 2.0rem;
+    display: inline-block;
+}

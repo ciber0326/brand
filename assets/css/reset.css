@@ -1,0 +1,100 @@
+/*!
+Theme Name: anew
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: anew
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+anew is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+*/
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+:root {
+	/* --clr- */
+	--clr-black: #262626;
+    --clr-blue: #1888f0;
+    --font-ja: "Zen Kaku Gothic Antique", sans-serif;
+    --font-en: "Inter", sans-serif;;
+}
+html {
+	font-size: clamp(6px, calc(1000vw / 1920), 10px);
+	/* font-family: */
+}
+body {
+	font-size: 1.6rem;
+	letter-spacing: 0.06em;
+	padding: 0 0;
+    margin: 0 0;
+	border: 0 0;
+    color: var(--clr-black);
+    font-family: var(--font-ja);
+    font-weight: 400;
+}
+ul {
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+}
+a {
+	text-decoration: none;
+	color: var(--clr-black);
+    cursor: pointer;
+}
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Adjust the background color if necessary */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loader-video {
+    width: 100%; /* Adjust to fit your video */
+    max-width: 600px; /* Optional: Set max width */
+    height: auto;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+/* For the entire scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #f1f1f1; /* Optional: adds a border around the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Changes color on hover */
+}
