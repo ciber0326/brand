@@ -26,4 +26,26 @@ $(document).ready(function () {
         },
         speed:20000,
     });
+
+
+    var $loader = $('#loader');
+    var $content = $('#content');
+    var $video = $('#loadingVideo');
+
+    // Listen for the video to end or use a timeout for a fixed duration
+    $video.on('ended', function() {
+        slideUpLoader();
+    });
+
+    // Alternatively, use a timeout to show the content after a fixed duration
+    setTimeout(slideUpLoader, $video[0].duration * 1000); // Or set a custom time, e.g., 5000ms (5 seconds)
+
+    function slideUpLoader() {
+        $loader.addClass('slide-up'); // Add the slide-up class to the loader
+        setTimeout(function() {
+            $loader.hide(); // Hide the loader after the slide-up effect is done
+            $content.fadeIn(1000); // Fade in the main content
+        }, 1000); // Wait for the slide-up transition to complete
+    }
+
 });
