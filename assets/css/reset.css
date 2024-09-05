@@ -20,6 +20,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 */
+
 *, *:after, *:before {
 	box-sizing: border-box;
     cursor: none;
@@ -29,7 +30,10 @@ Normalizing styles have been helped along thanks to the fine work of
 	--clr-black: #262626;
     --clr-blue: #1888f0;
     --font-ja: "Zen Kaku Gothic Antique", sans-serif;
-    --font-en: "Inter", sans-serif;;
+    /* --font-en: "Inter", sans-serif; */
+    --font-en: 'Chillax', sans-serif;
+
+    
 }
 html {
 	font-size: clamp(6px, calc(1000vw / 1920), 10px);
