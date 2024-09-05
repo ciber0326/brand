@@ -167,6 +167,25 @@ $(document).ready(function () {
             ease: "power2.out"
         });
     });
+// Animate each fadeUpScr li element dynamically based on its data attributes
+$('.fadeUpScr').each(function() {
+    let delay = $(this).data('delay') || 0;       // Get data-delay attribute, default to 0 if not set
+    let duration = $(this).data('duration') || 0.6; // Get data-duration attribute, default to 0.6 if not set
 
+    // Create animation for each li element
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: this,  // Element to trigger the scroll effect
+            start: "top 80%",    // When 80% of the element is in the viewport
+            once: true           // Ensures the animation only happens once
+        }
+    }).from(this, {
+        y: 50,               // Move the li element up from 50px below
+        opacity: 0,           // Fade in from 0 opacity
+        duration: duration,   // Dynamic duration from data-duration attribute
+        delay: delay,         // Dynamic delay from data-delay attribute
+        ease: "power2.out"
+    });
+});
 
 });
