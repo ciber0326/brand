@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         var scrollPosition = $(window).scrollTop();
         var gallerySection = $('.sec-gallery-company');
         var galleryTop = gallerySection.offset().top;
@@ -7,11 +7,11 @@ $(document).ready(function () {
         var sectionHeight = gallerySection.height();
         var galleryWrapper = $('.gallery-wrapper');
         var maxScroll = galleryWrapper.width() - $(window).width();
-    
+
         if (scrollPosition >= galleryTop - windowHeight && scrollPosition < galleryTop + sectionHeight) {
             var percentageScrolled = (scrollPosition - (galleryTop - windowHeight)) / (sectionHeight + windowHeight);
             var horizontalScroll = Math.min(maxScroll * percentageScrolled, maxScroll);
-    
+
             galleryWrapper.css('transform', 'translateX(-' + horizontalScroll + 'px)');
         }
     });
@@ -21,10 +21,10 @@ $(document).ready(function () {
         //centeredSlides: true,
         loop: true,
         autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
+            delay: 0,
+            disableOnInteraction: false,
         },
-        speed:20000,
+        speed: 20000,
     });
 
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
     var $video = $('#loadingVideo');
 
     // Listen for the video to end or use a timeout for a fixed duration
-    $video.on('ended', function() {
+    $video.on('ended', function () {
         slideUpLoader();
     });
 
@@ -42,10 +42,25 @@ $(document).ready(function () {
 
     function slideUpLoader() {
         $loader.addClass('slide-up'); // Add the slide-up class to the loader
-        setTimeout(function() {
+        setTimeout(function () {
             $loader.hide(); // Hide the loader after the slide-up effect is done
-            $content.fadeIn(1000); // Fade in the main content
-        }, 1000); // Wait for the slide-up transition to complete
+            $content.fadeIn(500); // Fade in the main content
+        }, 5000); // Wait for the slide-up transition to complete
     }
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".service-lists .animate-on-scroll", {
+        opacity: 0,
+        y: 50,
+        duration: 0.3,
+        stagger: 0.3,
+        scrollTrigger: {
+            trigger: ".service-lists",
+            start: "top 80%",  // Start the animation when the top of the service-lists is 80% down the viewport
+            end: "bottom 20%", // End the animation when the bottom of the service-lists is 20% up the viewport
+            toggleActions: "play none none reverse",  // Replays the animation on reverse scroll
+            markers: false,  // Change to true to see the ScrollTrigger markers
+        }
+    });
 
 });

@@ -18,7 +18,7 @@ h1 span{
     width: fit-content;
 }
 .page_scroll__text {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     line-height: 2.46;
     margin: 0 auto;
     text-transform: uppercase;
@@ -43,7 +43,6 @@ h1 span{
 }
 @media screen and (max-width: 1200px) {
     .top-hero > .container #titleWrapper {
-        
         padding-left: 8rem;
         padding-right: 20rem;
     }
