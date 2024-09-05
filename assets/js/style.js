@@ -60,9 +60,9 @@ $(document).ready(function () {
         }
 
 
-// header scroll
-    
-    var scrollTop = $(this).scrollTop();
+        // header scroll
+
+        var scrollTop = $(this).scrollTop();
 
         if (scrollTop > lastScrollTop) {
             // Scrolling down, hide the header
@@ -76,9 +76,9 @@ $(document).ready(function () {
     });
 
 
-    
+
     var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
+        spaceBetween: 0,
         slidesPerView: 1,
         //centeredSlides: true,
         loop: true,
@@ -124,5 +124,49 @@ $(document).ready(function () {
             markers: false,  // Change to true to see the ScrollTrigger markers
         }
     });
+
+    // Function to wrap each letter in a span, ignoring <br> tags
+    function wrapLettersWithSpans(element) {
+        $(element).contents().each(function () {
+            if (this.nodeType === 3) { // Text node
+                // Replace each letter with span, but ignore <br> tags
+                $(this).replaceWith($(this).text().replace(/([^\s])/g, '<span class="letter">$1</span>'));
+            } else if (this.nodeType === 1 && this.tagName === 'BR') {
+                // Keep <br> tags as they are
+                // No changes needed for <br> tags
+            }
+        });
+    }
+
+    // Apply letter wrapping for all elements with the fadeUp class
+    $('.fadeUp').each(function () {
+        wrapLettersWithSpans(this);
+    });
+
+    // GSAP animation for each letter
+    gsap.registerPlugin(ScrollTrigger);
+
+     // Animate each fadeUp element dynamically based on its data attributes
+     $('.fadeUp').each(function() {
+        let delay = $(this).data('delay') || 0;       // Get data-delay attribute, default to 0 if not set
+        let duration = $(this).data('duration') || 0.6; // Get data-duration attribute, default to 0.6 if not set
+
+        // Create animation for the current element
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: this,  // Element to trigger the scroll effect
+                start: "top 80%",    // When 80% of the element is in the viewport
+                once: true           // Ensures the animation only happens once
+            }
+        }).to($(this).find('.letter'), {
+            y: 0,                // Move the letters up from the bottom
+            opacity: 1,
+            stagger: 0.05,        // Stagger the animation by 0.05 seconds for each letter
+            duration: duration,   // Dynamic duration from data-duration attribute
+            delay: delay,         // Dynamic delay from data-delay attribute
+            ease: "power2.out"
+        });
+    });
+
 
 });

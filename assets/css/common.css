@@ -352,3 +352,13 @@ h2 {
   opacity: .5;
 }
 
+/* end cursor */
+
+
+.fadeUp .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    font-size: inherit;
+}
+
