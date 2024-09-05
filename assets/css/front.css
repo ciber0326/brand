@@ -290,6 +290,15 @@ a:has(.member-photo) {
     transform: rotateY(360deg);
     border-radius: 2.6rem;
 }
+.member-lists li:nth-child(1):after {
+    background-image: url('../images/top/member/member_01_actual.jpg');
+}
+.member-lists li:nth-child(2):after {
+    background-image: url('../images/top/member/member_02_actual.jpg');
+}
+.member-lists li:nth-child(3):after {
+    background-image: url('../images/top/member/member_03_acutual.jpg');
+}
 
 .member-lists li:hover .member-photo {
     opacity: 0;
