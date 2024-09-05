@@ -267,6 +267,7 @@ a:has(.member-photo) {
     transition: transform 0.6s ease, opacity 0.6s ease;
     backface-visibility: hidden;
     z-index: 1;
+    border-radius: 2.6rem;
 }
 
 .member-lists li::after {
@@ -283,6 +284,7 @@ a:has(.member-photo) {
     left: 0;
     opacity: 0;
     transform: rotateY(360deg);
+    border-radius: 2.6rem;
 }
 
 .member-lists li:hover .member-photo {
@@ -294,12 +296,50 @@ a:has(.member-photo) {
     opacity: 1;
     transform: rotateY(0deg);
 }
+
 .member-desc {
-    padding: 1.6rem 2rem;
+    padding: 3rem 2rem;
     text-align: center;
     font-family: var(--font-en);
+    width: 80%;
+    /* margin: 0 auto 0 0; */
+    margin-left: auto;
+    margin-right: 0;
+    transform: translateY(-80%);
+    background-color: #FFFFFF;
+    z-index: 2;
+    position: relative;
+    border-top-left-radius: 2rem;
 }
-
+.member-desc:before {
+    -webkit-clip-path: path("M1.54386 21.614C12.6283 21.614 21.614 12.6283 21.614 1.54386C21.614 1.02439 21.5943 0.509538 21.5555 0H22V22H0V21.5555C0.509538 21.5943 1.02439 21.614 1.54386 21.614Z");
+    position: absolute;
+    bottom: 0;
+    left: -21px;
+    width: 22px;
+    height: 22px;
+    background-color: inherit;
+    content: "";
+    clip-path: path("M1.54386 21.614C12.6283 21.614 21.614 12.6283 21.614 1.54386C21.614 1.02439 21.5943 0.509538 21.5555 0H22V22H0V21.5555C0.509538 21.5943 1.02439 21.614 1.54386 21.614Z");
+    transition-duration: .5s;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(.39,.575,.565,1);
+}
+.member-desc:after {
+    -webkit-clip-path: path("M1.54386 21.614C12.6283 21.614 21.614 12.6283 21.614 1.54386C21.614 1.02439 21.5943 0.509538 21.5555 0H22V22H0V21.5555C0.509538 21.5943 1.02439 21.614 1.54386 21.614Z");
+    position: absolute;
+    top: -21px;
+    right: -1px;
+    width: 22px;
+    height: 22px;
+    background-color: inherit;
+    content: "";
+    clip-path: path("M1.54386 21.614C12.6283 21.614 21.614 12.6283 21.614 1.54386C21.614 1.02439 21.5943 0.509538 21.5555 0H22V22H0V21.5555C0.509538 21.5943 1.02439 21.614 1.54386 21.614Z");
+    transition-duration: .5s;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(.39,.575,.565,1);
+    transform: translateX(-1px);
+}
 
 
 .swiper-container {
@@ -329,7 +369,7 @@ a:has(.member-photo) {
 .employee-content {
     color: #fff;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%,-50%);
     width: 80%;
     z-index: 1;
@@ -395,5 +435,5 @@ a:has(.member-photo) {
     }
 }
 .sec-employee {
-    padding: 20rem 0 20rem;
+    padding: 20rem 0 0;
 }
