@@ -340,10 +340,10 @@ h1 .desc {
 }
 @media screen and (max-width: 426px) {
     .news-lists li img {
-        width: 360px;
+        width: 320px;
     }
     .news-lists li {
-        width: 360px;
+        width: 320px;
         overflow: hidden;
         border-radius: 1.6rem;
     }
@@ -567,12 +567,12 @@ a:has(.member-photo) {
         row-gap: 5rem;
     }
     .member-lists {
-        width: 320px;
+        width: 300px;
     }
     .member-lists li {
         margin: 10px;
         position: relative;
-        width: 320px;
+        width: 300px;
         aspect-ratio: 3 / 4;
     }
     .member-lists li::after {
