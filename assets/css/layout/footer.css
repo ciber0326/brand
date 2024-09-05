@@ -43,3 +43,31 @@ footer a {
     width: 100%;
     height: 100%;
 }
+@media screen and (max-width: 768px) {
+    footer {
+        background-color: var(--clr-black);
+        padding: 8rem 6rem 4rem;
+        color: #ffffff;
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+    }
+    .f-col-2 {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        display: flex;
+        column-gap: 6rem;
+        font-size: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    footer {
+        background-color: var(--clr-black);
+        padding: 8rem 2rem 4rem;
+        color: #ffffff;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}

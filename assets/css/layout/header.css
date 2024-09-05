@@ -30,3 +30,60 @@ img[alt="site-logo"] {
     font-size: 2.0rem;
     display: inline-block;
 }
+.hamburger {
+    padding: 1rem 2rem;
+    border: 1px solid var(--clr-black);
+    border-radius: 4rem;
+    font-size: 10px;
+    display: none;
+}
+.hamburger span {
+    cursor: inherit;
+}
+.hamburger .closeMenu {
+    display: none;
+}
+.sp-gloabal-menu {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fef3ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: 0.4s all ease-in-out;
+    
+}
+.sp-gloabal-menu.active {
+    transform: translateX(0);
+}
+.sp-global-menu-lists {
+    flex-direction: column;
+    row-gap: 2rem;
+    display: flex;
+}
+.sp-global-menu-lists li a {
+    font-size: 3.2rem;
+    font-family: var(--font-en);
+    text-align: center;
+}
+.closeMenu {
+    right: 3rem;
+    top: 3rem;
+    font-size: 8rem;
+    font-weight: 100;
+    font-family: var(--font-en);
+}
+@media screen and (max-width: 768px) {
+    .primary-menu {
+        display: none !important;
+    }
+    .hamburger {
+        display: inline;
+
+    }
+}

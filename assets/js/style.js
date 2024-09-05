@@ -1,4 +1,16 @@
 $(document).ready(function () {
+
+    $('.hamburger').on('click',function() {
+        $(".sp-gloabal-menu").addClass("active")
+    })
+    $('.closeMenu').on('click',function() {
+        $(".sp-gloabal-menu").removeClass("active")
+    })
+
+
+
+
+
     // mouse cursor
 
     // UPDATE: I was able to get this working again... Enjoy!
@@ -90,25 +102,26 @@ $(document).ready(function () {
     });
 
 
-    var $loader = $('#loader');
-    var $content = $('#content');
-    var $video = $('#loadingVideo');
+    // var $loader = $('#loader');
+    // var $content = $('#content');
+    // var $video = $('#loadingVideo');
 
-    // Listen for the video to end or use a timeout for a fixed duration
-    $video.on('ended', function () {
-        slideUpLoader();
-    });
+    // // Listen for the video to end or use a timeout for a fixed duration
+    // $video.on('ended', function () {
+    //     slideUpLoader();
+    // });
 
-    // Alternatively, use a timeout to show the content after a fixed duration
-    setTimeout(slideUpLoader, $video[0].duration * 1000); // Or set a custom time, e.g., 5000ms (5 seconds)
+    // // Alternatively, use a timeout to show the content after a fixed duration
+    // setTimeout(slideUpLoader, $video[0].duration * 100); // Or set a custom time, e.g., 5000ms (5 seconds)
 
-    function slideUpLoader() {
-        $loader.addClass('slide-up'); // Add the slide-up class to the loader
-        setTimeout(function () {
-            $loader.hide(); // Hide the loader after the slide-up effect is done
-            $content.fadeIn(500); // Fade in the main content
-        }, 5000); // Wait for the slide-up transition to complete
-    }
+    // function slideUpLoader() {
+    //     $loader.addClass('slide-up'); // Add the slide-up class to the loader
+    //     setTimeout(function () {
+    //         $loader.hide(); // Hide the loader after the slide-up effect is done
+    //         $content.fadeIn(500); // Fade in the main content
+    //     }, 3000); // Wait for the slide-up transition to complete
+    // }
+
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.from(".service-lists .animate-on-scroll", {
@@ -146,8 +159,8 @@ $(document).ready(function () {
     // GSAP animation for each letter
     gsap.registerPlugin(ScrollTrigger);
 
-     // Animate each fadeUp element dynamically based on its data attributes
-     $('.fadeUp').each(function() {
+    // Animate each fadeUp element dynamically based on its data attributes
+    $('.fadeUp').each(function () {
         let delay = $(this).data('delay') || 0;       // Get data-delay attribute, default to 0 if not set
         let duration = $(this).data('duration') || 0.6; // Get data-duration attribute, default to 0.6 if not set
 
@@ -167,25 +180,25 @@ $(document).ready(function () {
             ease: "power2.out"
         });
     });
-// Animate each fadeUpScr li element dynamically based on its data attributes
-$('.fadeUpScr').each(function() {
-    let delay = $(this).data('delay') || 0;       // Get data-delay attribute, default to 0 if not set
-    let duration = $(this).data('duration') || 0.6; // Get data-duration attribute, default to 0.6 if not set
+    // Animate each fadeUpScr li element dynamically based on its data attributes
+    $('.fadeUpScr').each(function () {
+        let delay = $(this).data('delay') || 0;       // Get data-delay attribute, default to 0 if not set
+        let duration = $(this).data('duration') || 0.6; // Get data-duration attribute, default to 0.6 if not set
 
-    // Create animation for each li element
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: this,  // Element to trigger the scroll effect
-            start: "top 80%",    // When 80% of the element is in the viewport
-            once: true           // Ensures the animation only happens once
-        }
-    }).from(this, {
-        y: 50,               // Move the li element up from 50px below
-        opacity: 0,           // Fade in from 0 opacity
-        duration: duration,   // Dynamic duration from data-duration attribute
-        delay: delay,         // Dynamic delay from data-delay attribute
-        ease: "power2.out"
+        // Create animation for each li element
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: this,  // Element to trigger the scroll effect
+                start: "top 80%",    // When 80% of the element is in the viewport
+                once: true           // Ensures the animation only happens once
+            }
+        }).from(this, {
+            y: 50,               // Move the li element up from 50px below
+            opacity: 0,           // Fade in from 0 opacity
+            duration: duration,   // Dynamic duration from data-duration attribute
+            delay: delay,         // Dynamic delay from data-delay attribute
+            ease: "power2.out"
+        });
     });
-});
 
 });
