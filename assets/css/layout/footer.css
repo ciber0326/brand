@@ -1,7 +1,9 @@
 footer {
     background-color: var(--clr-black);
-    padding: 20rem 20rem 6rem;
+    padding: 16rem 20rem 6rem;
     color: #ffffff;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
 }
 footer a {
     color: #ffffff;

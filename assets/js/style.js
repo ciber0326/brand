@@ -39,6 +39,10 @@ $(document).ready(function () {
         });
     })
     // mouse cursor
+
+    var lastScrollTop = 0;
+    var header = $("header");
+
     $(window).on('scroll', function () {
         var scrollPosition = $(window).scrollTop();
         var gallerySection = $('.sec-gallery-company');
@@ -47,14 +51,32 @@ $(document).ready(function () {
         var sectionHeight = gallerySection.height();
         var galleryWrapper = $('.gallery-wrapper');
         var maxScroll = galleryWrapper.width() - $(window).width();
-
+        console.log(scrollPosition)
         if (scrollPosition >= galleryTop - windowHeight && scrollPosition < galleryTop + sectionHeight) {
             var percentageScrolled = (scrollPosition - (galleryTop - windowHeight)) / (sectionHeight + windowHeight);
             var horizontalScroll = Math.min(maxScroll * percentageScrolled, maxScroll);
 
             galleryWrapper.css('transform', 'translateX(-' + horizontalScroll + 'px)');
         }
+
+
+// header scroll
+    
+    var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down, hide the header
+            gsap.to(header, { y: "-100%", duration: 0.5 });
+        } else if (scrollTop < lastScrollTop) {
+            // Scrolling up, show the header
+            gsap.to(header, { y: "0%", duration: 0.5 });
+        }
+
+        lastScrollTop = scrollTop;
     });
+
+
+    
     var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
         slidesPerView: 1,

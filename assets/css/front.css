@@ -34,6 +34,23 @@ h1 span{
     margin-top: .7320644217vw;
     width: 8.9311859444vw;
 }
+[alt="scroll_down_arrow"] {
+    width: 4rem;
+    animation-name: scrollDownArrow;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes scrollDownArrow {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
 [alt="hero_img"] {
     margin-top: 2rem;
     width: 90%;

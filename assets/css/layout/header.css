@@ -1,6 +1,18 @@
 header {
     padding: 20px 0;
     font-family: var(--font-en);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: top 0.3s ease;
+    /* box-shadow: 0px 0px 10px var(--clr-black); */
+}
+main {
+    margin-top: 80px; /* Space for header */
 }
 .h-wrapper {
     display: flex;
