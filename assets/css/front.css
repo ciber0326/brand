@@ -225,7 +225,7 @@ h1 .desc {
 /* sec-news */
 .sec-news h2 span.font-ja {
     font-size: 0.4em;
-    margin: 4rem 0;
+    margin: 1.2rem 0;
     display: inline-block;
 }
 .sec-news-wrapper {
@@ -382,6 +382,11 @@ h1 .desc {
 .sec-service {
     padding: 20rem 0;
 }
+.sec-service h2 span.font-ja {
+    font-size: 0.4em;
+    margin: 1.2rem 0;
+    display: inline-block;
+}
 .service-lists {
     display: grid;
     grid-template-columns: repeat(2, minmax(0,1fr));
@@ -447,7 +452,7 @@ h1 .desc {
 
 .sec-member h2 span.font-ja {
     font-size: 0.4em;
-    margin: 4rem 0;
+    margin: 1.2rem 0;
     display: inline-block;
 }
 [alt="member_fallback"] {
@@ -693,6 +698,9 @@ a:has(.member-photo) {
 }
 .sec-employee {
     padding: 20rem 0 0;
+    transform: translateY(30px);
+    z-index: -1;
+    position: relative;
 }
 
 @media screen and (max-width: 768px) {

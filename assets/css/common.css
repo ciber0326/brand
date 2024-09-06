@@ -434,6 +434,9 @@ h2 {
     transform: translateY(20px);
     font-size: inherit;
 }
+.pc-hide {
+    display: none;
+}
 @media screen and (max-width: 1024px) {
     .i-container {
         padding: 0 30rem;
@@ -460,6 +463,9 @@ h2 {
     h2 {
         font-size: 24px;
         font-weight: 900;
+    }
+    .pc-hide {
+        display: block;
     }
     
 }

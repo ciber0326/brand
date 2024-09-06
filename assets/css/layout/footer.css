@@ -1,9 +1,9 @@
 footer {
     background-color: var(--clr-black);
-    padding: 16rem 20rem 6rem;
+    padding: 10rem 20rem 6rem;
     color: #ffffff;
-    border-top-left-radius: 10rem;
-    border-top-right-radius: 10rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 footer a {
     color: #ffffff;
@@ -19,6 +19,7 @@ footer a {
 }
 .f-col-2 a {
     padding: 2rem 2rem;
+    text-align: center;
 }
 [alt="footer-logo"] {
     width: 20rem;
@@ -61,13 +62,20 @@ footer a {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
+    .f-col-2 a {
+        width: 15rem;
+        min-width: fit-content;
+    }
 }
 @media screen and (max-width: 426px) {
     footer {
         background-color: var(--clr-black);
         padding: 8rem 2rem 4rem;
         color: #ffffff;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    [alt="footer-logo"] {
+        width: 12rem;
     }
 }
