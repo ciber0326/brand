@@ -75,7 +75,9 @@
     display: flex;
     column-gap: 14rem;
 }
-
+.swiper-scrollbar-drag {
+    background: var(--clr-blue) !important;
+}
 @media screen and (max-width: 768px) {
     .news-title {
         font-size: 2rem;
