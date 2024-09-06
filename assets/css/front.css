@@ -468,10 +468,10 @@ h1 .desc {
 
 .member-lists li {
     
-    margin: 10px;
+    
     position: relative;
-    width: 40rem;
-    aspect-ratio: 3/4;
+    /* width: 40rem; */
+    
 }
 a:has(.member-photo) {
     display: flex;
@@ -481,20 +481,18 @@ a:has(.member-photo) {
 }
 .member-photo {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 3/4;
     object-fit: cover;
     transition: transform 0.6s ease, opacity 0.6s ease;
     backface-visibility: hidden;
     z-index: 1;
     border-radius: 2.6rem;
+    border: 1px solid var(--clr-grey);
 }
 
-.member-lists li::after {
-    content: '';
-    display: block;
+.backface {
     width: 100%;
-    aspect-ratio: 3/4;
-    background-image: url('../images/top/member_real_photo.jpg');
+    height: 100%;
     background-size: cover;
     background-position: center;
     transition: transform 0.6s ease, opacity 0.6s ease;
@@ -504,15 +502,8 @@ a:has(.member-photo) {
     opacity: 0;
     transform: rotateY(360deg);
     border-radius: 2.6rem;
-}
-.member-lists li:nth-child(1):after {
-    background-image: url('../images/top/member/member_01_actual.jpg');
-}
-.member-lists li:nth-child(2):after {
-    background-image: url('../images/top/member/member_02_actual.jpg');
-}
-.member-lists li:nth-child(3):after {
-    background-image: url('../images/top/member/member_03_acutual.jpg');
+    object-fit: cover;
+    border: 1px solid var(--clr-grey);
 }
 
 .member-lists li:hover .member-photo {
@@ -520,11 +511,38 @@ a:has(.member-photo) {
     transform: rotateY(360deg);
 }
 
-.member-lists li:hover::after {
+.member-lists li:hover .backface {
     opacity: 1;
     transform: rotateY(0deg);
 }
-
+.member-swiper {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    position: relative;
+    margin-bottom: 8rem;
+}
+.member-swiper .navigation {
+    position: absolute;
+    width: 20rem;
+    aspect-ratio: 2 / 1;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3.2rem;
+    filter: drop-shadow(6px 0px 5px var(--clr-grey));
+    backdrop-filter: blur(3px);
+}
+.member-swiper .navigation .href-more:first-child {
+    transform: scaleX(-1);
+}
+.member-swiper .navigation .href-more {
+    padding: 0 0rem;
+}
 .member-desc {
     padding: 3rem 2rem;
     text-align: center;
@@ -533,11 +551,13 @@ a:has(.member-photo) {
     /* margin: 0 auto 0 0; */
     margin-left: auto;
     margin-right: 0;
-    transform: translateY(-80%);
+    /* transform: translateY(-80%); */
     background-color: #FFFFFF;
     z-index: 2;
-    position: relative;
+    position: absolute;
+    right: 0;
     border-top-left-radius: 2rem;
+    bottom: 0;
 }
 .member-desc:before {
     -webkit-clip-path: path("M1.54386 21.614C12.6283 21.614 21.614 12.6283 21.614 1.54386C21.614 1.02439 21.5943 0.509538 21.5555 0H22V22H0V21.5555C0.509538 21.5943 1.02439 21.614 1.54386 21.614Z");
@@ -572,20 +592,17 @@ a:has(.member-photo) {
 
 @media screen and (max-width: 768px) {
     .member-lists {
-        flex-direction: column;
-        width: 40rem;
-        margin: 0 auto;
-        row-gap: 5rem;
+        
     }
     .member-lists {
         width: 300px;
     }
-    .member-lists li {
+    /* .member-lists li {
         margin: 10px;
         position: relative;
         width: 300px;
         aspect-ratio: 3 / 4;
-    }
+    } */
     .member-lists li::after {
         width: 100%;
         /* aspect-ratio: 3 / 4; */
@@ -601,16 +618,27 @@ a:has(.member-photo) {
         font-size: 0.8em;
      
     }
+    .member-swiper .navigation {
+        width: fit-content;
+        left: unset;
+        top: 4rem;
+        background-color: transparent;
+        padding-inline: 0;
+        backdrop-filter: blur(0px);
+        flex-direction: column;
+        row-gap: 2rem;
+        right: 1rem;
+    }
 }
 
 
-.swiper-container {
+.gallery-employee {
     width: 100%;
     aspect-ratio: 3/1;
     overflow: hidden;
 }
 
-.swiper-container .swiper-wrapper{
+.gallery-employee .swiper-wrapper{
     transition-timing-function: linear !important;
     width: 100%;
     height: 100%;
@@ -650,6 +678,7 @@ a:has(.member-photo) {
     padding: 0 0;
     margin-top: 6rem;
 }
+
 
 .career_indicator {
     align-items: center;
@@ -699,14 +728,14 @@ a:has(.member-photo) {
 .sec-employee {
     padding: 20rem 0 0;
     transform: translateY(30px);
-    z-index: -1;
+    z-index: 0;
     position: relative;
 }
 
 @media screen and (max-width: 768px) {
-    .swiper-container {
+    .gallery-employee {
         width: 100%;
-        aspect-ratio: 3 / 2;
+        aspect-ratio: 3 / 4;
         overflow: hidden;
     }
     .employee-content h2 + p {
@@ -720,11 +749,7 @@ a:has(.member-photo) {
     .sec-employee {
         padding: 20rem 0 0;
     }
-    .swiper-container {
-        width: 100%;
-        aspect-ratio: 3 / 4;
-        overflow: hidden;
-    }
+    
     .sec-employee h2 {
         font-size: 3.8rem;
     }

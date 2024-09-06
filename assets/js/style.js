@@ -65,7 +65,6 @@ $(document).ready(function () {
             var sectionHeight = gallerySection.height();
             var galleryWrapper = $('.gallery-wrapper');
             var maxScroll = galleryWrapper.width() - $(window).width();
-            console.log(scrollPosition)
             if (scrollPosition >= galleryTop - windowHeight && scrollPosition < galleryTop + sectionHeight) {
                 var percentageScrolled = (scrollPosition - (galleryTop - windowHeight)) / (sectionHeight + windowHeight);
                 var horizontalScroll = Math.min(maxScroll * percentageScrolled, maxScroll);
@@ -93,7 +92,7 @@ $(document).ready(function () {
 
 
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.gallery-employee', {
         spaceBetween: 0,
         slidesPerView: 1,
         //centeredSlides: true,
@@ -245,5 +244,44 @@ $(document).ready(function () {
             },
           }
       });
+
+    //   member swiper
+    var memberSwiper = new Swiper(".member-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 14,
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+            nextEl: '.navigation .href-more.next',
+            prevEl: '.navigation .href-more.prev',
+          },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1.1,
+              spaceBetween: 10,
+              centeredSlides: false,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 1.7,
+              spaceBetween: 18,
+            },
+            // when window width is >= 1024px
+            920: {
+              slidesPerView: 2.2,
+              spaceBetween: 22,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }
+          
+      });
+
+
+      
+
 
 });

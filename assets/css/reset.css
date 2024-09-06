@@ -34,8 +34,8 @@ Normalizing styles have been helped along thanks to the fine work of
 	/* --clr- */
 	--clr-black: #333333;
     --clr-blue: #1ea366;
+    --clr-grey: #edeae5;
     --font-ja: "Zen Kaku Gothic Antique", sans-serif;
-    /* --font-en: "Inter", sans-serif; */
     --font-en: 'Chillax', sans-serif;
 }
 html {

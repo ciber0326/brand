@@ -18,12 +18,11 @@
 .bg-clr-black {
     background-color: var(--clr-black);
 }
-
-
 /* heading tag */
 h2 {
     font-size: 5.2rem;
     font-weight: 900;
+    margin-top: 0;
 }
 
 .overflow-hidden {
@@ -76,6 +75,9 @@ h2 {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+}
+.half-container {
+    padding-left: 22rem;
 }
 
 .y-center {
@@ -437,6 +439,13 @@ h2 {
 .pc-hide {
     display: none;
 }
+.blue-point {
+    width: 1.2rem;
+    aspect-ratio: 1/1;
+    background-color: var(--clr-blue);
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1024px) {
     .i-container {
         padding: 0 30rem;
