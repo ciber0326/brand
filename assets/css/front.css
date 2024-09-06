@@ -340,22 +340,24 @@ h1 .desc {
 }
 @media screen and (max-width: 426px) {
     .news-lists li img {
-        width: 320px;
+        width: 100%;
     }
     .news-lists li {
-        width: 320px;
+        width: 100%;
         overflow: hidden;
         border-radius: 1.6rem;
     }
     .news-lists li > a {
         border-radius: 0;
+        display: flex;
+        width: 100%;
     }
     .news-item-title {
         margin-top: 1rem;
         width: 100%;
         display: block;
         line-height: 2;
-        font-size: 16px;
+        font-size: 1.6rem;
     }
     .news-item-data {
         padding: 0rem 4rem;
@@ -369,6 +371,10 @@ h1 .desc {
     .news-lists li .comment .tag {
         border: 1px solid var(--clr-black);
         padding: 1.2rem 2rem;
+    }
+    .news-lists li .comment {
+        font-size: 1rem;
+        padding: 1.6rem 2rem;
     }
 }
 /* sec-service */
