@@ -205,4 +205,45 @@ $(document).ready(function () {
         });
     });
 
+
+
+    //////////////////////////related news
+
+    var relatedSwiper = new Swiper(".horizontal_scroll_swiper", {
+        slidesPerView: 2,
+        // centeredSlides: true,
+        spaceBetween: 14,
+        // grabCursor: true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        freeMode: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        mousewheel: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 1.2,
+              spaceBetween: 14,
+            },
+            // when window width is >= 1024px
+            920: {
+              slidesPerView: 1.5,
+              spaceBetween: 16,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          }
+      });
+
 });
