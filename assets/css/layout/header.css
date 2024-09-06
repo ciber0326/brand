@@ -86,4 +86,8 @@ img[alt="site-logo"] {
         display: inline;
 
     }
+    .sp-gloabal-menu {
+        background-color: #fef3ef6b;        
+        backdrop-filter: blur(8px);
+    }
 }
