@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    $('.hamburger').on('click',function() {
+    $('.hamburger').on('click', function () {
         $(".sp-gloabal-menu").addClass("active")
     })
-    $('.closeMenu').on('click',function() {
+    $('.closeMenu').on('click', function () {
         $(".sp-gloabal-menu").removeClass("active")
     })
 
@@ -55,23 +55,25 @@ $(document).ready(function () {
     var lastScrollTop = 0;
     var header = $("header");
 
+    // if($('.sec-gallery-company').length > 0) {
     $(window).on('scroll', function () {
-        var scrollPosition = $(window).scrollTop();
-        var gallerySection = $('.sec-gallery-company');
-        var galleryTop = gallerySection.offset().top;
-        var windowHeight = $(window).height();
-        var sectionHeight = gallerySection.height();
-        var galleryWrapper = $('.gallery-wrapper');
-        var maxScroll = galleryWrapper.width() - $(window).width();
-        console.log(scrollPosition)
-        if (scrollPosition >= galleryTop - windowHeight && scrollPosition < galleryTop + sectionHeight) {
-            var percentageScrolled = (scrollPosition - (galleryTop - windowHeight)) / (sectionHeight + windowHeight);
-            var horizontalScroll = Math.min(maxScroll * percentageScrolled, maxScroll);
+        if ($('.sec-gallery-company').length > 0) {
+            var scrollPosition = $(window).scrollTop();
+            var gallerySection = $('.sec-gallery-company');
+            var galleryTop = gallerySection.offset().top;
+            var windowHeight = $(window).height();
+            var sectionHeight = gallerySection.height();
+            var galleryWrapper = $('.gallery-wrapper');
+            var maxScroll = galleryWrapper.width() - $(window).width();
+            console.log(scrollPosition)
+            if (scrollPosition >= galleryTop - windowHeight && scrollPosition < galleryTop + sectionHeight) {
+                var percentageScrolled = (scrollPosition - (galleryTop - windowHeight)) / (sectionHeight + windowHeight);
+                var horizontalScroll = Math.min(maxScroll * percentageScrolled, maxScroll);
 
-            galleryWrapper.css('transform', 'translateX(-' + horizontalScroll + 'px)');
+                galleryWrapper.css('transform', 'translateX(-' + horizontalScroll + 'px)');
+            }
+
         }
-
-
         // header scroll
 
         var scrollTop = $(this).scrollTop();
@@ -86,6 +88,8 @@ $(document).ready(function () {
 
         lastScrollTop = scrollTop;
     });
+
+    // }
 
 
 
