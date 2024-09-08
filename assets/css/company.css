@@ -1,0 +1,271 @@
+#companyPage h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#companyPage section {
+    padding: 14rem 0 4rem;
+}
+#companyPage section h3 {
+    text-align: left;
+    text-transform: uppercase;
+}
+.sec-company-bio {
+    padding: 14rem 0 4rem;
+}
+.reward-lists {
+    display: flex;
+    column-gap: 1rem;
+}
+.reward-lists img {
+    width: 14rem;
+}
+[alt="company-bio-feature"] {
+    border-radius: 4.8rem;
+    margin: 10rem auto 4.8rem;
+    width: 100%;
+    display: block;
+}
+.bio-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bio-wrapper h2 {
+    font-size: 4rem;
+}
+.bio-wrapper h2 span.font-ja {
+    font-size: 0.4em;
+}
+.bio-wrapper h2 span.date-bigger {
+    font-size: 1.6em;
+}
+.sec-company-sentence p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+[alt="comapny-building"] {
+    width: 40%;
+    margin-right: 8rem;
+    border-radius: 2.4rem;
+}
+.sec-president p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+.sec-president h2 {
+    font-size: 3.2rem;
+    margin-block-end: 3.2rem;
+}
+[alt="img-president"] {
+    width: 40%;
+    margin-right: 8rem;
+    border-radius: 2.4rem;
+}
+
+[alt="signature"] {
+    width: 200px;
+    margin-top: 2rem;
+}
+.sec-company-outline h3 .font-en {
+    font-size: 1.8em;
+   
+}
+.outline-table {
+    width: 40%;
+}
+.table-company-outline {
+    width: 100%;
+}
+.table-company-outline th {
+    background-color: var(--clr-grey);
+    width: 22%;
+}
+.outline-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8rem;
+}
+iframe.company-map {
+    width: 100%;
+    aspect-ratio: 6/7;
+}   
+.outline-map {
+    width: 50%;
+}
+[alt="brand-logo"] {
+    width: 100%;
+}
+.sec-brand-logo {
+    width: 100%;
+    aspect-ratio: 4/1;
+    background-image: url(../images/company/brand.jpg);
+    background-attachment: fixed;
+    background-size: 100% cover;
+    background-position: 0 0;
+}
+.sec-brand-logo h2 {
+    color: #fff;
+    text-shadow: 1px 1px 4px var(--clr-blue);
+}
+
+/* //////////// sec-sdg */
+.sec-sdg {
+    line-height: 2;
+    font-size: clamp(14px,2rem,16px);
+    padding-bottom: 10rem !important;
+}
+.sec-sdg h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-align: left;
+}
+.sec-sdg h2 .font-en {
+    font-size: 1.8em;
+}
+.sec-sdg .sdg-lists h4 {
+    background: var(--clr-grey);
+    padding-inline: 4rem;
+    padding-block: 2rem;
+    font-size: 2.2rem;
+    border-radius: 1.2rem;
+}
+.sdg-lists {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    row-gap: 4rem;
+    column-gap: 4rem;
+    margin-bottom: 4rem;
+}
+.sdg-lists li p {
+    min-height: 4em;
+}
+.sdg-lists ul {
+    list-style: circle;
+    padding-inline-start: 6rem;
+    min-height: 9em;
+    display: block;
+}
+.sdg-badge-img {
+    width: 8rem;
+}
+.sdg-badge-lists {
+    margin-top: 2rem;
+}
+[alt="sec-mark-img"] {
+    width: 40%;
+    margin-right: 8rem;
+    float: left;
+    padding-top: 2rem;
+}
+@media screen and (max-width: 1440px) {
+    .outline-wrapper {
+        column-gap: 8rem;
+        flex-direction: column;
+    }
+    .outline-table {
+        width: 100%;
+    }
+    .table-company-outline {
+        width: 100%;
+        max-width: 840px;
+        margin: 0 auto;
+        font-size: 16px;
+
+    }
+    .outline-map {
+        max-width: 840px;
+        margin: 0 auto;
+        font-size: 16px;
+        width: 100%;
+    }
+    .outline-map p {
+        font-size: 16px;
+        line-height: 2;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .sdg-lists {
+        grid-template-columns: 100%;
+    }
+    .sec-president p:has([alt="signature"]) {
+        text-align: right;
+    }
+    [alt="comapny-building"] {
+        width: 50%;
+        margin-right: 4rem;
+        border-radius: 2.4rem;
+        margin-bottom: 4rem;
+    }
+    #companyPage section {
+        padding: 6rem 0 2rem;
+    }
+    [alt="img-president"] {
+        width: 50%;
+        margin-right: 4rem;
+        border-radius: 2.4rem;
+        margin-bottom: 4rem;
+    }
+    #companyPage h3 {
+        line-height: 1.8;
+    }
+    .sec-brand-logo {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .bio-wrapper {
+        flex-direction: column;
+    }
+    .bio-wrapper h2 {
+        font-size: 3rem;
+    }
+    
+}
+@media screen and (max-width: 426px) {
+    .table-company-outline {
+        width: 800px;
+    }   
+    .bio-wrapper {
+        flex-direction: column;
+    }
+    .reward-lists img {
+        width: 10rem;
+    }
+    [alt="company-bio-feature"] {
+        border-radius: 2.4rem;
+        margin: 5rem auto 0;
+    }
+    #companyPage section {
+        padding: 2rem 0 2rem;
+    }
+    [alt="comapny-building"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        border-radius: 2.4rem;
+        float: right;
+    }
+    #companyPage h2 {
+        width: 100%;
+    }
+    [alt="img-president"] {
+        width: 100%;
+        margin-right: 0;
+    }
+    #companyPage section {
+        aspect-ratio: 3 / 4;
+    }
+    .bio-wrapper h2 {
+        font-size: 2.6rem;
+    }
+    #companyPage h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0rem;
+    }
+}

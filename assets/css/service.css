@@ -1,0 +1,45 @@
+#servicePage section {
+    padding: 10rem 0;
+}
+.comment-lists {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 70%;
+    flex: 0 0 auto;
+}
+.comment-lists li {
+    font-size: 1.8rem;
+    padding-inline: 2rem;
+}
+.comment-lists li:not(:last-child) {
+    border-right: 1px solid var(--clr-grey);
+    
+}
+.comment-lists li .largest-number {
+    font-weight: 900;
+    -webkit-text-stroke-color: var(--clr-black);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+
+}
+.comment-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2rem;
+    padding-left: 4rem;
+}
+.comment-wrapper p {
+    font-size: clamp(14px, 1.8rem, 17px);
+    line-height: 1.8;
+}
+
+/* sec-service-gallery */
+.sec-service-gallery {
+    width: 100%;
+    aspect-ratio: 16/9;
+    padding: 0 0 !important;
+}

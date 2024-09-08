@@ -43,6 +43,15 @@ h2 {
 .overflow-y-auto {
     overflow-y: auto;
 }
+.overflow-auto {
+    overflow: auto;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
 /* display */
 .inline-block {
     display: inline-block;
@@ -468,7 +477,22 @@ h2 {
 .navigation .btn-svg-wrapper {
     width: 6.4rem;
 }
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+}
+.larger {
+    font-size: 2.2em;
+    font-weight: 900;
+}
+.largest-number {
+    font-size: 3em;
+    font-weight: 900;
 
+}
 @media screen and (max-width: 1024px) {
     .i-container {
         padding: 0 30rem;
@@ -492,6 +516,9 @@ h2 {
     }
 }
 @media screen and (max-width: 426px) {
+    .container {
+        padding: 0 1.5rem;
+    }
     h2 {
         font-size: 24px;
         font-weight: 900;
@@ -510,5 +537,8 @@ h2 {
         row-gap: 2rem;
         right: 1rem;
     }
-    
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
 }

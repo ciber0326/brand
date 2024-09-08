@@ -280,6 +280,21 @@ $(document).ready(function () {
           
       });
 
+      //service page
+
+      var serviceGallery = new Swiper('.sec-service-gallery', {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        //centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        speed: 20000,
+    });
+    
+
 
       
 
