@@ -445,6 +445,29 @@ h2 {
     background-color: var(--clr-blue);
     border-radius: 50%;
 }
+.navigation {
+    position: static;
+    width: fit-content;
+    aspect-ratio: 2 / 1;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3.2rem;
+    filter: drop-shadow(6px 0px 5px var(--clr-grey));
+    backdrop-filter: blur(3px);
+    
+    column-gap: 2rem;
+}
+ .navigation .href-more:first-child {
+    transform: scaleX(-1);
+}
+ .navigation .href-more {
+    padding: 0 0rem;
+}
+.navigation .btn-svg-wrapper {
+    width: 6.4rem;
+}
 
 @media screen and (max-width: 1024px) {
     .i-container {
@@ -475,6 +498,17 @@ h2 {
     }
     .pc-hide {
         display: block;
+    }
+    .navigation {
+        width: fit-content;
+        left: unset;
+        top: 4rem;
+        background-color: transparent;
+        padding-inline: 0;
+        backdrop-filter: blur(0px);
+        flex-direction: column;
+        row-gap: 2rem;
+        right: 1rem;
     }
     
 }

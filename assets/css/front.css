@@ -521,6 +521,7 @@ a:has(.member-photo) {
     position: relative;
     margin-bottom: 8rem;
 }
+
 .member-swiper .navigation {
     position: absolute;
     width: 20rem;
@@ -543,6 +544,7 @@ a:has(.member-photo) {
 .member-swiper .navigation .href-more {
     padding: 0 0rem;
 }
+
 .member-desc {
     padding: 3rem 2rem;
     text-align: center;
