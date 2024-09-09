@@ -67,6 +67,10 @@
     margin: 2rem auto;
     text-indent: 0;
 }
+#servicePageDetail h3 .font-ja {
+  font-size: 0.6em;
+  font-weight: 400;
+}
 @media screen and (max-width: 768px) {
     .sticky-navi {
         display: none;
