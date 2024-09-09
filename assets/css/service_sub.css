@@ -1,14 +1,14 @@
-.servicePageEC-wrapper h4 {
+.servicePageDetail-wrapper h4 {
     font-size: 3.6rem;
 }
-.servicePageEC-wrapper h4 span.font-ja {
+.servicePageDetail-wrapper h4 span.font-ja {
     font-weight: 400;
     font-size: 0.6em;
 }
-.servicePageEC-wrapper {
+.servicePageDetail-wrapper {
     padding: 10rem 0;
 }
-.servicePageEC-wrapper p {
+.servicePageDetail-wrapper p {
     font-size: clamp(14px,18rem,16px);
     margin-bottom: 4rem;
     line-height: 2;
@@ -59,7 +59,7 @@
   .sec-ec-bio {
 
   }
-  #servicePageEC h3 {
+  #servicePageDetail h3 {
     font-size: 4rem;
   }
 .sec-sub-service-02 p {
@@ -76,10 +76,10 @@
     }
 }
 @media screen and (max-width: 425px) {
-    #servicePageEC h3 {
+    #servicePageDetail h3 {
         font-size: 2.8rem;
     }
-    .servicePageEC-wrapper {
+    .servicePageDetail-wrapper {
         padding: 2rem 0;
     }
     [alt="service-bio-img"] {
