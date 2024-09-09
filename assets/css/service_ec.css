@@ -1,0 +1,89 @@
+.servicePageEC-wrapper h4 {
+    font-size: 3.6rem;
+}
+.servicePageEC-wrapper h4 span.font-ja {
+    font-weight: 400;
+    font-size: 0.6em;
+}
+.servicePageEC-wrapper {
+    padding: 10rem 0;
+}
+.servicePageEC-wrapper p {
+    font-size: clamp(14px,18rem,16px);
+    margin-bottom: 4rem;
+    line-height: 2;
+  }
+.section-group {
+    flex: 0 0 auto;
+    width: 80%;
+}
+  article.section-group section {
+    /* height: 1000px; 
+    border: 1px solid #ccc; */
+    padding-block-end: 6rem;
+
+  }
+  
+  .sticky-navi {
+    position: sticky;
+    top: 12rem;
+    list-style: none;
+    height: fit-content;
+  }
+  
+  .sticky-navi li {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+  }
+  
+
+  ul.sticky li.active::before {
+    position: absolute;
+    content: "";
+    left: -20%;
+    top: 50%;
+    width: 1rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--clr-blue);
+  }
+
+  [alt="service-bio-img"] {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 3.2rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .sec-ec-bio {
+
+  }
+  #servicePageEC h3 {
+    font-size: 4rem;
+  }
+.sec-sub-service-02 p {
+    width: fit-content;
+    margin: 2rem auto;
+    text-indent: 0;
+}
+@media screen and (max-width: 768px) {
+    .sticky-navi {
+        display: none;
+    }
+    .section-group {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    #servicePageEC h3 {
+        font-size: 2.8rem;
+    }
+    .servicePageEC-wrapper {
+        padding: 2rem 0;
+    }
+    [alt="service-bio-img"] {
+        max-width: 600px;
+        border-radius: 1.6rem;
+    }
+}

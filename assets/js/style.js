@@ -294,6 +294,42 @@ $(document).ready(function () {
         speed: 20000,
         allowTouchMove:false,
     });
+
+    //service ec
+    const sections = $('article.section-group section');
+    const menuItems = $('ul.sticky li');
+  
+    // Click event for smooth scrolling to section
+    menuItems.each(function(index) {
+      $(this).on('click', function() {
+        const targetSection = sections.eq(index);
+        
+        // Animate scrolling with GSAP
+        gsap.to(window, { 
+          duration: 0.3, 
+          scrollTo: { y: targetSection.offset().top, autoKill: false }, 
+          ease: 'power2.inOut' 
+        });
+  
+        // Update active class
+        menuItems.removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  
+    // Scroll event to update active state based on current section in view
+    $(window).on('scroll', function() {
+      sections.each(function(index) {
+        const sectionTop = $(this).offset().top;
+        const sectionHeight = $(this).outerHeight();
+        const scrollPos = $(window).scrollTop();
+  
+        if (scrollPos >= sectionTop - 100 && scrollPos < sectionTop + sectionHeight - 100) {
+          menuItems.removeClass('active');
+          menuItems.eq(index).addClass('active');
+        }
+      });
+    });
     
 
 

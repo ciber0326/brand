@@ -40,6 +40,7 @@ Normalizing styles have been helped along thanks to the fine work of
 }
 html {
 	font-size: clamp(6px, calc(1000vw / 1920), 10px);
+    scroll-behavior: smooth;
 	/* font-family: */
 }
 @media screen and (max-width: 768px) {
