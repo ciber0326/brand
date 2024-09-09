@@ -292,6 +292,7 @@ $(document).ready(function () {
             disableOnInteraction: false,
         },
         speed: 20000,
+        allowTouchMove:false,
     });
     
 
