@@ -1,0 +1,84 @@
+#servicePageRental section {
+  padding: 10rem 0 0;
+}
+#servicePageRental h4 {
+  font-size: 3.6rem;
+}
+#servicePageRental h5 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  padding-left: 2em;
+}
+
+.rental-bio-wrapper h3 {
+  font-size: 4rem;
+}
+.rental-bio-wrapper h3 small {
+  font-size: 0.6em;
+  font-weight: 400;
+  margin-top: 4rem;
+  display: inline-block;
+  padding-inline-start: 2rem;
+}
+.rental-bio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rental-bio-wrapper [alt="service-bio-img"] {
+  border-radius: 0;
+  border-top-left-radius: 3.2rem;
+  margin: 0 0 0 auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center center;
+}
+.rental-bio-wrapper .bio-title {
+  width: 70rem;
+}
+.rental-bio-wrapper .bio-title p {
+  line-height: 2.6;
+  font-size: 1.8rem;
+}
+[alt="service-rental-desc"] {
+  width: 30rem;
+  position: absolute;
+  left: 0;
+  top: 6rem;
+
+}
+[alt="service-rental-desc-small"] {
+  width: 50rem;
+  position: absolute;
+  right: 24rem;
+  bottom: 20rem;
+}
+
+
+/* sec-rental-desc */
+
+.pin-spacer {
+  z-index: 999999999999999;
+  /* column-gap: 4rem; */
+}
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.gallery-container {
+	/* width: 300vw; */
+	height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+  column-gap: 4rem;
+  align-items: center;
+}
+
+.gallery-container .panel {
+  width: 100vw;
+  flex: 0 0 auto;
+  background-color: #fff;
+  border: 1px solid var(--clr-black);
+  height: 60%;
+}
