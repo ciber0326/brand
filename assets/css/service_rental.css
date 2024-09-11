@@ -326,7 +326,7 @@ body {
   }
 
   .gallery-container .panel {
-    height: 70%;
+    height: 80%;
   }
 
   .gallery-container .panel:nth-child(n) img:nth-of-type(1) {
