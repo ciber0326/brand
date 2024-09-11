@@ -493,6 +493,11 @@ h2 {
     font-weight: 900;
 
 }
+@media screen and (max-width: 1356px) {
+    .half-container {
+        padding-left: 10rem;
+    }
+}
 @media screen and (max-width: 1024px) {
     .i-container {
         padding: 0 30rem;
@@ -514,6 +519,10 @@ h2 {
     .i-container {
         padding: 0 4rem;
     }
+        .half-container {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
 }
 @media screen and (max-width: 426px) {
     .container {
@@ -541,4 +550,8 @@ h2 {
         width: 100%;
         overflow-x: auto;
     }
+    .half-container {
+        padding: 0 1.5rem;
+    }
 }
+
