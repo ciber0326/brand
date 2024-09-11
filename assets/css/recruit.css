@@ -1,0 +1,201 @@
+main#recruit {
+  background-color: var(--clr-grey);
+}
+main#recruit section {
+  padding: 10rem 0 10rem;
+}
+main#recruit p {
+  font-size: 1.8rem;
+  line-height: 2.6;
+}
+main#recruit h3 {
+  flex: 0 0 auto;
+  width: 30%;
+  font-size: 5.2rem;
+ 
+}
+main#recruit h3 span {
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--clr-blue);
+  -webkit-text-stroke-width: 1px;
+}
+
+main#recruit h3 small {
+  font-size: 0.4em;
+  font-weight: 400;
+  color: var(--clr-black);
+}
+.sec-recruit-bio {
+  padding-bottom: 4rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(../images/recruit/recruit-bg.jpeg);
+  background-attachment: fixed;
+  background-size: 100% 100%, cover;
+  background-position: center center, center center;
+}
+.recruit-bio-wrapper {
+  display: flex;
+  column-gap: 8rem;
+}
+.recruit-bio-wrapper h5 {
+  font-size: 2.6rem;
+  line-height: 2;
+}
+
+.sec-recruit-content {
+  background-color: var(--clr-grey);
+}
+.recruit-lists {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  column-gap: 4rem;
+  row-gap: 4rem;
+
+}
+.recruit-lists li {
+  width: 100%;
+  
+}
+.recruit-lists li > a {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 7/8;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.recruit-lists li > a span {
+  left: 2rem;
+  top: 2rem;
+  background-color: #1ea366a8;
+  color: #fff;
+  padding-inline: 1em;
+  padding-block: 0.2em;
+  border-radius: 0.4em;
+}
+.recruit-lists li > a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  
+}
+.recruit-detail-content {
+  padding: 2rem 4rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 3rem;
+  border-top-right-radius: 0;
+  /* border: 1px solid black; */
+  transform: translateY(-16%);
+  background-color: #fff;
+  position: relative;
+}
+.recruit-detail-content:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../images/Intersect.png);
+  background-size: 100% 100%;
+  transform: translateY(-95%);
+}
+.recruit-detail-content h6 {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.btn-to-rec-detail {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  color: var(--clr-blue);
+  font-size: 1.8rem;
+  justify-content: flex-end;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  padding-inline: 2rem;
+}
+.btn-to-rec-detail:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: var(--clr-blue);
+  width: 0;
+  transition: 0.3s width ease-in-out;
+
+}
+.btn-to-rec-detail:hover:after {
+  width: 100%;
+}
+.btn-to-rec-detail:hover span {
+  background-color: var(--clr-blue);
+}
+.btn-to-rec-detail:hover svg path {
+  stroke: #fff;
+}
+.btn-to-rec-detail span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--clr-blue);
+  transition: 0.3s background-color ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  .recruit-lists {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 4rem;
+    row-gap: 0;
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 768px) {
+  main#recruit h3 {
+    margin-block: 2rem 0rem;
+}
+  main#recruit section {
+    padding: 4rem 0 10rem;
+}
+  .recruit-bio-wrapper {
+    flex-direction: column;
+}
+  .recruit-lists {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 4rem;
+    row-gap: 0;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+}
+main#recruit p {
+  font-size: 1.6rem;
+  line-height: 2.6;
+}
+}
+@media screen and (max-width: 425px) {
+ 
+  .recruit-lists {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 4rem;
+    row-gap: 0;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.recruit-lists li > a span {
+  font-size: 1.4rem;
+}
+}
