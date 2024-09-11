@@ -1,0 +1,42 @@
+#privacy section {
+  padding: 10rem 0 10rem;
+}
+#privacy h3 {
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+#privacy h3 small{
+  font-size: 0.4em;
+  font-weight: 500;
+}
+#privacy p, ul {
+  font-family: 1.8rem;
+  line-height: 2.6;
+}
+#privacy ul li:not(:last-child) {
+  margin-bottom: 2em;
+}
+.sec-privacy-content {
+  
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url('../images/privacy.jpeg');
+background-attachment: fixed;
+background-size: 100% 100%, cover;
+background-position: center center,center center;
+
+}
+@media screen and (max-width: 768px) {
+  #privacy section {
+    padding: 10rem 0 5rem;
+} 
+}
+@media screen and (max-width: 425px) {
+  #privacy section {
+    padding: 5rem 0 2.6rem;
+}
+#privacy h3 {
+  font-size: 4.2rem;
+}
+.sec-privacy-content {
+  padding-bottom: 6rem !important;
+}
+}

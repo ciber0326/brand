@@ -331,6 +331,7 @@ $(document).ready(function () {
     
 
 
+if($('.gallery-container').length > 0) {
 
   let panels = gsap.utils.toArray(".panel");
   
@@ -345,6 +346,7 @@ $(document).ready(function () {
       end: () => "+=" + document.querySelector(".gallery-container").offsetWidth
     }
   });
+}
   
 
 

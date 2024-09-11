@@ -12,7 +12,7 @@ header {
     /* box-shadow: 0px 0px 10px var(--clr-black); */
 }
 main {
-    margin-top: 80px; /* Space for header */
+    margin-top: 100px; /* Space for header */
 }
 .h-wrapper {
     display: flex;
