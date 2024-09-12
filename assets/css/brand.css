@@ -1,0 +1,117 @@
+main#brand {
+}
+
+
+main#brand section {
+  padding: 10rem 0 10rem;
+}
+main#brand p {
+  font-size: 1.8rem;
+  line-height: 2.6;
+}
+main#brand h3 {
+  
+  font-size: 5.2rem;
+  flex: 0 0 auto;
+  width: 40rem;
+}
+main#brand h3 span {
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--clr-blue);
+  -webkit-text-stroke-width: 1px;
+}
+
+main#brand h3 small {
+  font-size: 0.4em;
+  font-weight: 400;
+  color: var(--clr-black);
+}
+main#brand .brand-lists h5 {
+  text-align: center;
+    font-size: 5.2rem;
+    margin-block: 0.4em;
+    border-bottom: 2px solid var(--clr-blue);
+    margin-block-end: 10rem;
+}
+.brand-detail-img {
+  width: 100%;
+}
+.brand-lists li:not(:last-child) {
+  margin-bottom: 10rem;
+}
+.sec-brand-bio {
+  padding-bottom: 4rem;
+  background-attachment: fixed;
+  background-size: 100% 100%, cover;
+  background-position: center center, center center;
+  aspect-ratio: 4/1;
+}
+.brand-bio-wrapper {
+  display: flex;
+  column-gap: 8rem;
+}
+.brand-bio-wrapper h5 {
+  font-size: 2.6rem;
+  line-height: 2;
+}
+
+.sec-brand-detail-content {
+}
+.sec-brand-content h4 {
+  font-size: 3.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  main#brand h3 {
+    margin-block: 2rem 0rem;
+}
+  main#brand section {
+    padding: 4rem 0 10rem;
+}
+.brand-bio-wrapper {
+  flex-direction: column;
+  width: 72%;
+}
+  
+main#brand p {
+  font-size: 1.6rem;
+  line-height: 2.6;
+}
+main#brand .brand-lists h5 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-block: 0.4em;
+  border-bottom: 2px solid var(--clr-blue);
+  margin-block-end: 2rem;
+}
+}
+@media screen and (max-width: 425px) {
+ 
+  .recruit-lists {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 4rem;
+    row-gap: 0;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.recruit-lists li > a span {
+  font-size: 1.4rem;
+}
+.table-recruit-detail {
+  width: 800px;
+}
+main#brand table p {
+  font-size: 14px;
+}
+main#brand h3 {
+  font-size: 3.4rem;
+}
+.brand-bio-wrapper h5 {
+  font-size: 1.9rem;
+  line-height: 2;
+  word-wrap: break-word;
+}
+}
