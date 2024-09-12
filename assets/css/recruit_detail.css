@@ -1,37 +1,37 @@
-main#recruit {
-  background-color: var(--clr-grey);
+main#recruitDetail {
 }
-main#recruit section {
+
+.table-recruit-detail th {
+  background-color: var(--clr-grey);
+  width: 25%;
+}
+
+main#recruitDetail section {
   padding: 10rem 0 10rem;
 }
-main#recruit p {
+main#recruitDetail p {
   font-size: 1.8rem;
   line-height: 2.6;
 }
-main#recruit h3 {
-  flex: 0 0 auto;
-  width: 30%;
+main#recruitDetail h3 {
+  
   font-size: 5.2rem;
  
 }
-main#recruit h3 span {
+main#recruitDetail h3 span {
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: var(--clr-blue);
   -webkit-text-stroke-width: 1px;
 }
 
-main#recruit h3 small {
+main#recruitDetail h3 small {
   font-size: 0.4em;
   font-weight: 400;
   color: var(--clr-black);
-  -webkit-text-fill-color: unset;
-  -webkit-text-stroke-color: unset;
-  -webkit-text-stroke-width: unset;
 }
-.sec-recruit-bio {
+.sec-recruit-detail-bio {
   padding-bottom: 4rem;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(../images/recruit/recruit-bg.jpeg);
   background-attachment: fixed;
   background-size: 100% 100%, cover;
   background-position: center center, center center;
@@ -45,11 +45,7 @@ main#recruit h3 small {
   line-height: 2;
 }
 
-.sec-recruit-content {
-  background-color: var(--clr-grey);
-}
-.sec-recruit-content h4 {
-  font-size: 3.2rem;
+.sec-recruit-detail-content {
 }
 .recruit-lists {
   display: grid;
@@ -167,10 +163,10 @@ main#recruit h3 small {
 }
 }
 @media screen and (max-width: 768px) {
-  main#recruit h3 {
+  main#recruitDetail h3 {
     margin-block: 2rem 0rem;
 }
-  main#recruit section {
+  main#recruitDetail section {
     padding: 4rem 0 10rem;
 }
   .recruit-bio-wrapper {
@@ -185,7 +181,7 @@ main#recruit h3 small {
     max-width: 620px;
     margin: 0 auto;
 }
-main#recruit p {
+main#recruitDetail p {
   font-size: 1.6rem;
   line-height: 2.6;
 }
@@ -203,5 +199,14 @@ main#recruit p {
 }
 .recruit-lists li > a span {
   font-size: 1.4rem;
+}
+.table-recruit-detail {
+  width: 800px;
+}
+main#recruitDetail table p {
+  font-size: 14px;
+}
+main#recruitDetail h3 {
+  font-size: 3.4rem;
 }
 }
