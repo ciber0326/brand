@@ -1,0 +1,55 @@
+main#contact section {
+    padding: 10rem 0 10rem;
+}
+.sec-contact-bio {
+    background-attachment: fixed;
+    background-size: cover;
+    aspect-ratio: 4/1;
+}
+.sec-contact-bio h3 {
+    font-size: 5.2rem;
+    color: var(--clr-black);
+}
+.sec-contact-bio h3 span.font-en {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--clr-blue);
+    -webkit-text-stroke-width: 1px;
+    text-transform: uppercase;
+}
+.sec-contact-bio h3 small {
+    font-size: 0.4em;
+    color: var(--clr-blue);
+}
+.sec-contact-form .contact-desc {
+    line-height: 2.6;
+    text-align: center;
+    margin-block-end: 8rem;
+}
+.contact-wrapper {
+    width: 100%;
+    min-height: 1000px;
+    border: 1px solid var(--clr-black);
+    background-color: var(--clr-grey);
+    padding-inline: 4rem;
+    padding-block: 4rem;
+    border-radius: 3.2rem;
+}
+@media screen and (max-width: 768px) {
+    main#contact section {
+        padding: 5rem 0 5rem;
+    }
+    .sec-contact-bio {
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        aspect-ratio: 4 / 1;
+    }
+}
+@media screen and (max-width: 425px) {
+    .sec-contact-bio h3 {
+        font-size: 3.4rem;
+    }
+    .sec-contact-form .contact-desc {
+        margin-block-end: 4rem;
+    }
+}
