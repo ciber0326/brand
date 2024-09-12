@@ -1,0 +1,391 @@
+#serviceConsult section {
+  padding: 10rem 0 10rem;
+}
+.sec-consult-bio {
+  background-attachment: fixed;
+  background-size: cover;
+  aspect-ratio: 4/1;
+
+}
+.sec-consult-bio h3 {
+  font-size: 5.2rem;
+}
+.sec-consult-bio h3 span {
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--clr-blue);
+  -webkit-text-stroke-width: 1px;
+}
+.sec-consult-bio h3 small {
+  font-size: 0.4em;
+}
+#serviceConsult h4 {
+  flex: 0 0 auto;
+  font-size: 2.6rem;
+  text-indent: 2em;
+  line-height: 2.2;
+}
+.sec-consult-bio-desc p {
+  line-height: 2.6;
+}
+[alt="consult-img-01"] {
+  display: block;
+  width: 800px;
+  max-width: 90%;
+  margin: 0 auto 10rem;
+}
+
+/* .sec-worry  */
+.sec-worry {
+  position: relative;
+  background-size: cover;
+
+}
+
+.worry-wrapper {
+    position: relative;
+    margin: 0 auto;
+    background-color: #333333eb;
+    color: #fff;
+    padding-inline: 8rem;
+    padding-block-start: 14rem;
+    padding-block-end: 8rem;
+    border-radius: 3.2rem;
+    margin-top: 10rem;
+    width: 100rem;
+}
+.worry-wrapper ul {
+  font-size: 1.8rem;
+  line-height: 3;
+  width: 60%;
+}
+.worry-wrapper li {
+  border-bottom: 1px solid #fff;
+  padding-inline: 2em;
+  position: relative;
+}
+.worry-wrapper li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  aspect-ratio: 1/1;
+  background-image: url(../images/checkbox.png);
+  background-size: 100% 100%;
+
+}
+[alt="consult-02"] {
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  width: 30rem;
+  transform: translateY(-10%);
+}
+.mid-title {
+  background-color: #333333eb;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  font-weight: 400;
+  width: fit-content;
+  margin: 4rem auto;
+  border-radius: 1.2rem;
+}
+[alt="consult-img-03"] {
+  width: 80rem;
+  margin: 0 auto;
+  display: block;
+}
+[alt="consult-img-03"]+p {
+  font-size: 1.8rem;
+  margin-block: -4rem 8rem;
+}
+[alt="consult-img-04"] {
+  margin: 0 auto;
+  width: 100rem;
+  display: block;
+}
+.sec-point > .container {
+  display: flex;
+  column-gap: 8rem;
+}
+.point-lists li {
+  display: flex;
+  column-gap: 8rem;
+  padding: 10rem 6rem;
+}
+.point-lists li:nth-child(even) .sentence {
+    order: 1;
+}
+.point-lists li:nth-child(even) .point-order {
+  right: 2rem;
+  left: unset;
+}
+.point-lists li p {
+  font-size: 1.8rem;
+  line-height: 2.2;
+}
+.point-lists li .point-order {
+  position: absolute;
+  left: 2rem;
+  top: -3rem;
+  font-size: 4rem;
+  font-family: var(--font-en);
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--clr-blue);
+  -webkit-text-stroke-width: 1px;
+  text-transform: uppercase;
+
+}
+.point-lists li .point-order:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30rem;
+  height: 1px;
+  background-color: var(--clr-blue);
+  left: 120%;
+}
+.point-lists li:nth-child(even) .point-order:after {
+  left: unset;
+  right: 120%;
+}
+.point-lists li .point-item-img {
+  width: 40rem;
+  height: fit-content;
+  border-radius: 1.2rem;
+}
+.point-lists li:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.point-lists li h6 {
+  font-size: 2rem;
+  margin: 0 0 6rem;
+}
+.sec-point h4 {
+  text-indent: 0!important;
+  position: sticky;
+  top: 20rem;
+  height: fit-content;
+  letter-spacing: 0.08em;
+}
+
+
+/* sec-supoption */
+.sec-supoption {
+    padding: 10rem 0;
+    aspect-ratio: 4/1;
+    position: relative;
+}
+.sec-supoption .btn-view-all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30rem;
+}
+[alt="consult-img-13"] {
+  display: block;
+  margin: 0 auto;
+  margin-block: 10rem 10rem;
+  width: 80rem;
+}
+.flow-lists {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4rem;
+    width: 100rem;
+    margin: 0 auto;
+}
+.flow-lists li {
+  flex: 0 0 auto;
+  width: 46rem;
+  /* border: 1px solid var(--clr-blue); */
+  padding: 8rem 8rem;
+  border-radius: 2.4rem;
+  box-shadow: 1px 1px 4px #1ea36663;
+  position: relative;
+}
+.flow-lists li h6 {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+.flow-lists li p {
+  font-size: 1.8rem;
+  line-height: 2.6;
+}
+.flow-lists li span {
+  position: absolute;
+  top: 0;
+  left: 4rem;
+  transform: translateY(-50%);
+  background-color: #fff;
+  font-family: var(--font-en);
+  font-size: 4rem;
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--clr-blue);
+  -webkit-text-stroke-width: 1px;
+}
+.sec-flow h4 {
+  margin-bottom: 8rem;
+}
+
+.sec-faq h6 {
+  margin: 0 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.sec-consult-contact {
+  padding: 10rem 0 16rem;
+}
+.consult-contact-wrapper {
+  width: 80rem;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  border-radius: 3.2rem;
+  border: 1px solid var(--clr-grey);
+}
+@media screen and (max-width: 1024px) {
+  .sec-point > .container {
+    column-gap: 8rem;
+    flex-direction: column;
+    row-gap: 10rem;
+}
+}
+@media screen and (max-width: 768px) {
+  #serviceConsult section {
+    padding: 10rem 0 0rem;
+}
+.sec-consult-bio {
+  padding: 10rem 0 10rem!important;
+}
+.sec-supoption {
+  padding: 10rem 0 !important;
+}
+  [alt="consult-02"] {
+    position: static;
+    transform: translateY(-10%);
+    display: block;
+    margin: 0 auto;
+}
+.worry-wrapper {
+  border-radius: 2.7rem;
+  margin-top: 10rem;
+  width: 100%;
+}
+.worry-wrapper ul {
+  font-size: 1.6rem;
+  line-height: 3;
+  width: 100%;
+}
+.mid-title {
+  font-size: 1.6rem;
+}
+[alt="consult-img-03"] {
+  width: 100%;
+}
+[alt="consult-img-04"] {
+  width: 100%;
+  display: block;
+}
+.sec-point h4 {
+  position: static;
+}
+.point-lists li {
+  column-gap: 8rem;
+  padding: 6rem 4rem;
+  flex-direction: column;
+  row-gap: 6rem;
+}
+.point-lists li .point-item-img {
+  width: 40rem;
+  height: fit-content;
+  border-radius: 1.2rem;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+[alt="consult-img-13"] {
+  
+  width: 70%;
+}
+.flow-lists {
+  justify-content: center;
+  row-gap: 4rem;
+  width: 100%;
+}
+.consult-contact-wrapper {
+  width: 90%;
+  border-radius: 3.2rem;
+}
+.point-lists li .point-order:after {
+  content: none;
+ 
+}
+}
+@media screen and (max-width: 426px) {
+  .sec-consult-bio h3 {
+    font-size: 3.6rem;
+}
+.sec-consult-bio {
+  padding: 4rem 0 4rem !important;
+}
+#serviceConsult h4 {
+  flex: 0 0 auto;
+  font-size: 1.6rem;
+  text-indent: 2em;
+  line-height: 2.2;
+}
+[alt="consult-img-01"] {
+  display: block;
+  width: 800px;
+  max-width: 90%;
+  margin: 0 auto 2rem;
+}
+.worry-wrapper {
+  border-radius: 2.7rem;
+  margin-top: 5rem;
+  width: 100%;
+  padding-inline: 2rem;
+}
+.worry-wrapper li::before {
+  top: 2.5rem;
+  
+}
+.mid-title {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+[alt="consult-img-03"]+p {
+  font-size: 1.8rem;
+  margin-block: -7rem 8rem;
+}
+.sec-supoption {
+  padding: 2rem 0 !important;
+  aspect-ratio: 4 / 3;
+}
+.flow-lists li {
+  width: 90%;
+  padding: 6rem 4rem;
+}
+.flow-lists li h6 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+.sec-faq h6 {
+  margin: 0 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.point-lists li .point-order:after {
+  content: none;
+ 
+}
+}

@@ -348,6 +348,27 @@ $(document).ready(function () {
     });
   }
 
+  $('.faq-question')?.click(function() {
+    var $faqItem = $(this).parent();
+    var $answer = $faqItem.find('.faq-answer');
+    
+    // Check if the current item is already active
+    if ($faqItem.hasClass('active')) {
+        // Collapse the active item
+        $answer.slideUp();
+        $faqItem.removeClass('active');
+    } else {
+        // Expand the clicked item
+        $answer.slideDown();
+        $faqItem.addClass('active');
+        
+        // Collapse other open items
+        $('.faq-item').not($faqItem).each(function() {
+            $(this).removeClass('active');
+            $(this).find('.faq-answer').slideUp();
+        });
+    }
+});
 
   // ///////////////////////////////////////  prevent safe ///////////////////////////////////////////////////////////
 
