@@ -292,6 +292,18 @@ $(document).ready(function () {
     speed: 20000,
     allowTouchMove: false,
   });
+  var flatGallery = new Swiper('.sec-flat-gallery', {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    //centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 20000,
+    allowTouchMove: false,
+  });
 
   //service ec
   const sections = $('article.section-group section');

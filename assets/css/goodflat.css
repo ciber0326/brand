@@ -1,0 +1,287 @@
+main#goodflat section {
+    padding: 10rem 0 0;
+}
+main#goodflat section h4 {
+    font-size: 3rem;
+}
+.sec-goodflat-bio {
+    padding: 10rem 0 10rem !important;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sec-goodflat-bio img[alt="site-logo"] {
+    transform: translateY(-17%);
+}
+main#goodflat h3 {
+    font-size: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    font-weight: 900;
+    border-bottom: 2px solid var(--clr-blue);
+    width: fit-content;
+    margin: 0 auto;
+    margin-block-end: 8rem;
+}
+main#goodflat h3 span {
+    text-align: center;
+    line-height: 1.8;
+}
+main#goodflat h5 {
+    font-size: 2rem;
+    line-height: 1.8;
+}
+main#goodflat p {
+    font-size: 1.8rem;
+    line-height: 2.6;
+}
+.sec-goodflat-bio p {
+    padding-inline: 8rem;
+}
+/* sec flat brand */
+[alt="flat-img-brand"] {
+    display: block;
+    margin: 0 auto;
+    width: 80rem;
+}
+.sec-flat-brand p.desc {
+    margin-block-end: 4rem;
+}
+.flat-brand-lists {
+    padding-block: 8rem;
+}
+.flat-brand-lists>li {
+    display: flex;
+    column-gap: 8rem;
+
+}
+.flat-brand-lists>li h6 {
+    font-size: 2.2rem;
+    margin-block: 4rem;
+}
+.flat-brand-body {
+    padding: 0 4rem 4rem;
+}
+.brand-order {
+    font-size: 4rem;
+    font-family: var(--font-en);
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--clr-blue);
+    -webkit-text-stroke-width: 1px;
+}
+.flat-brand-lists>li:not(:last-child) {
+    margin-bottom: 8rem;
+}
+.flat-brand-lists>li > img {
+    width: 50rem;
+    height: fit-content;
+    border-radius: 3.2rem;
+}
+.sec-flat-gallery {
+    padding: 0 0 !important;
+    aspect-ratio: 4/1;
+}
+.sec-flat-gallery .swiper-slide {
+    display: flex;
+}
+[alt="media-img"] {
+    display: block;
+    width: 80rem;
+    margin: 0 auto;
+}
+.sec-instagram {
+    padding: 10rem 0 !important;
+}
+.sec-instagram h3 {
+    font-size: 4rem;
+    font-family: var(--font-en);
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--clr-blue);
+    -webkit-text-stroke-width: 1px;
+    border-bottom: none;
+}
+.instagram-lists {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 1rem;
+    padding: 1rem 1rem;
+    background-color: var(--clr-grey);
+    border-radius: 3.2rem;
+}
+.instagram-lists li {
+    border-radius: 3.2rem;
+    overflow: hidden;
+}
+.instagram-lists li a {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.instagram-lists li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.instagram-follow {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    font-size: 2rem;
+    justify-content: center;
+    padding-block: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+.instagram-follow svg {
+    width: 2rem;
+    height: 2rem;
+}
+.event-lists-wrapper {
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+}
+.event-lists-wrapper > ul {
+    width: calc((100% - 2rem) / 2);
+}
+.event-lists-wrapper > ul li {
+    width: 100%;
+    display: flex;
+}
+.event-lists-wrapper > ul li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.event-lists-wrapper > ul li img {
+    width: 100%;
+    aspect-ratio: 0.8;
+}
+/* .event-lists-wrapper > ul:last-child li img {
+    aspect-ratio: 4/5;
+} */
+.event-lists-wrapper > ul li img.row-half {
+    aspect-ratio: 1.6;
+}
+/* .event-lists-wrapper > ul:last-child li img.row-half {
+    aspect-ratio: 4/10;
+} */
+
+@media screen and (max-width: 1024px) {
+    main#goodflat h3 span {
+        font-size: 3rem;
+    }
+    main#goodflat h3 {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 4rem;
+        font-weight: 900;
+        border-bottom: 2px solid var(--clr-blue);
+        width: fit-content;
+        margin: 0 auto;
+        margin-block-end: 8rem;
+    }
+    main#goodflat p {
+        font-size: 14px;
+        line-height: 2.6;
+    }
+    main#goodflat h5 {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .flat-brand-lists>li {
+        display: flex;
+        column-gap: 2rem;
+    }
+    main#goodflat h3 span {
+        font-size: 2.2rem;
+    }
+    main#goodflat h5 {
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+    main#goodflat p {
+        font-size: 1.6rem;
+    }
+    [alt="flat-img-brand"] {
+        width: 90%;
+    }
+    .flat-brand-lists>li {
+        row-gap: 2rem;
+        flex-direction: column;
+    }
+    .flat-brand-lists>li > img {
+        width: 90%;
+        height: fit-content;
+        border-radius: 3.2rem;
+        margin: 0 auto;
+    }
+    .flat-brand-body {
+        padding: 4rem 4rem;
+    }
+    .flat-brand-lists>li:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    [alt="media-img"] {
+        display: block;
+        width: 90%;
+        margin: 4rem auto;
+    }
+    .instagram-lists {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+        background-color: var(--clr-grey);
+        border-radius: 3.2rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    main#goodflat h3 {
+        flex-direction: column;
+        row-gap: 2rem;
+        border-bottom: none;
+    }
+    main#goodflat h3 span {
+        font-size: 20px;
+    }
+    .sec-goodflat-bio img[alt="site-logo"] {
+        width: 200px;
+    }
+    main#goodflat h5 {
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+    .sec-goodflat-bio p {
+        padding-inline: 2rem;
+    }
+    main#goodflat h3 {
+        flex-direction: column;
+        row-gap: 2rem;
+        border-bottom: none;
+        margin-block-end: 6rem;
+    }
+    .event-lists-wrapper > ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+    main#goodflat p {
+        padding-inline: 1rem;
+    }
+    .sec-flat-gallery {
+        aspect-ratio: 2 / 1;
+    }
+    .instagram-lists {
+        grid-template-columns: 100%;
+    }
+}
