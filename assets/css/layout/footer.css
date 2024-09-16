@@ -23,14 +23,22 @@ footer::before {
 footer a {
     color: #ffffff;
 }
-
+.company-map {
+    background-color: #fff;
+    color: var(--clr-black);
+    height: fit-content;
+    padding-inline: 2em;
+}
+.company-map a {
+    color: var(--clr-black) !important;
+}
 .f-col-2 {
     margin-top: 6rem;
     margin-bottom: 6rem;
     display: flex;
     column-gap: 6rem;
     font-size: 2rem;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .f-col-2 a {
     padding: 2rem 2rem;
@@ -59,6 +67,60 @@ footer a {
     width: 100%;
     height: 100%;
 }
+footer h6 {
+    font-size: 1.6rem;
+}
+.href-to-map {
+    display: flex;
+    align-items: center;
+}
+[alt="jump-to-map"] {
+    width: 1.4rem;
+}
+.to-top {
+    text-transform: uppercase;
+    height: max-content;
+    top: 12rem;
+    right: 8rem;
+    font-size: 2rem;
+    font-family: var(--font-en);
+    writing-mode: vertical-lr;
+    
+}
+.scroll-top-wrapper {
+    width: 1px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 1rem;
+}
+.scroll-top-wrapper .scroll-dot {
+    position: absolute;
+    left: -150%;
+    width: 1rem;
+    aspect-ratio: 1/1;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-name: toTopAnimation;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.72, 0.16, 0.74, 0.55);
+    animation-iteration-count: infinite;
+}
+@keyframes toTopAnimation {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .company-map {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media screen and (max-width: 768px) {
     footer {
         background-color: var(--clr-black);
@@ -81,6 +143,13 @@ footer a {
         width: 15rem;
         min-width: fit-content;
     }
+    .scroll-top-wrapper .scroll-dot {
+        
+        left: -333%;
+        width: 1rem;
+        
+    }
+    
 }
 @media screen and (max-width: 426px) {
     footer {
@@ -92,5 +161,11 @@ footer a {
     }
     [alt="footer-logo"] {
         width: 12rem;
+    }
+    .to-top {
+        
+        top: 10rem;
+        right: 2rem;
+     
     }
 }
