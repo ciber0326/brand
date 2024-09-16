@@ -93,6 +93,14 @@ img[alt="site-logo"] {
     font-weight: 100;
     font-family: var(--font-en);
 }
+.href-service {
+    display: flex !important;
+    column-gap: 0.4rem;
+    align-items: center;
+}
+.has-dropdown:hover [alt="icon-plus"] {
+    transform: rotate(45deg);
+}
 @media screen and (max-width: 768px) {
     .primary-menu {
         display: none !important;

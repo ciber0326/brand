@@ -692,3 +692,6 @@ h2 {
 .faq-item.active .icon {
     transform: rotate(45deg);
 }
+.common-transition {
+    transition: all 0.3s ease-in-out;
+}
