@@ -381,7 +381,9 @@ $(document).ready(function () {
         });
     }
 });
-
+$('.to-top').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, 'smooth');
+});
   // ///////////////////////////////////////  prevent safe ///////////////////////////////////////////////////////////
 
   // // Prevent right-click context menu
