@@ -164,9 +164,8 @@ footer h6 {
         width: 12rem;
     }
     .to-top {
-        
-        top: 10rem;
+        top: 2rem;
         right: 2rem;
-     
+        font-size: 16px;
     }
 }
