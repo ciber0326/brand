@@ -25,9 +25,7 @@ img[alt="site-logo"] {
 .primary-menu {
     column-gap: 20px;
 }
-.primary-menu li:hover .dropdown {
-    height: 32.4rem;
-}
+
 
 .dropdown {
     background-color: #fff;
@@ -36,17 +34,17 @@ img[alt="site-logo"] {
     border-bottom-right-radius: 3.2rem;
     padding-inline: 3rem;
     font-size: 1.6rem;
-    height: 0;
-    min-height: fit-content;
-    max-height: fit-content;
-    overflow-y: hidden;
-    transition:0.4s height cubic-bezier(0.4, 0, 1, 1);
+    display: none;
+    z-index: 1000;
+    width: max-content;
+
 }
 .primary-menu li > a {
     padding: 10px 10px;
     font-size: 2.0rem;
     display: inline-block;
 }
+
 .hamburger {
     padding: 1rem 2rem;
     border: 1px solid var(--clr-black);

@@ -1,5 +1,16 @@
 $(document).ready(function () {
 
+  $('.has-dropdown').hover(
+    function() {
+        // On hover, slide down the dropdown
+        $(this).find('.dropdown').stop(true, true).slideDown('fast');
+    },
+    function() {
+        // On hover out, slide up the dropdown
+        $(this).find('.dropdown').stop(true, true).slideUp('fast');
+    }
+);
+
   $('.hamburger').on('click', function () {
     $(".sp-gloabal-menu").addClass("active")
   })
