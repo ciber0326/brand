@@ -424,6 +424,12 @@ h1 .desc {
     padding: 2.4rem 2rem;
     text-align: center;
 }
+.sec-service .btn-view-all {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+}
 
 @media screen and (max-width: 768px) {
     .service-lists {

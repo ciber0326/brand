@@ -74,9 +74,9 @@ a {
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
 }
-p {
+/* p {
     text-indent: 2em;
-}
+} */
 a:hover {
     opacity: 0.7;
 }
