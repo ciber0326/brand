@@ -66,6 +66,7 @@ footer a {
 }
 footer h6 {
     font-size: 1.6rem;
+    margin-block: 0.2rem;
 }
 .href-to-map {
     display: flex;
