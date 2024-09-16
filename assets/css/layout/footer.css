@@ -96,7 +96,8 @@ footer h6 {
 }
 .scroll-top-wrapper .scroll-dot {
     position: absolute;
-    left: -150%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1rem;
     aspect-ratio: 1/1;
     background-color: #fff;
@@ -145,7 +146,7 @@ footer h6 {
     }
     .scroll-top-wrapper .scroll-dot {
         
-        left: -333%;
+        
         width: 1rem;
         
     }
