@@ -173,7 +173,10 @@ iframe.company-map {
     float: left;
     padding-top: 2rem;
 }
-.sec-rec-cont {
+
+
+
+/* .sec-rec-cont {
     display: flex;
     flex-wrap: wrap;
     aspect-ratio: 3/1;
@@ -186,7 +189,7 @@ iframe.company-map {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    /* display: flex; */
+    
     display: inline-block;
     padding: 8rem 0;
 }
@@ -221,7 +224,7 @@ iframe.company-map {
 }
 .sec-rec-cont .rec-wrapper:nth-child(2){
     background-image: linear-gradient(#0000007a, #0000003d), url("../images/contact/contact.jpeg");
-}
+} */
 
 @media screen and (max-width: 1440px) {
     .outline-wrapper {
@@ -286,18 +289,18 @@ iframe.company-map {
     .bio-wrapper h2 {
         font-size: 3rem;
     }
-    .rec-wrapper {
+    /* .rec-wrapper {
         width: 100%;
         height: unset;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         color: #fff;
-        /* display: flex; */
+        
         display: inline-block;
         padding: 8rem 0;
         aspect-ratio: 3 / 1;
-    }
+    } */
     
 }
 @media screen and (max-width: 426px) {
