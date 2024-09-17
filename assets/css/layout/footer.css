@@ -26,12 +26,14 @@ footer a {
 .company-map {
     
     height: fit-content;
-    padding-inline: 2em;
+    padding-inline: 4rem;
 }
-
+.f-col-1 {
+    padding-inline: 3rem;
+}
 .f-col-2 {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
     column-gap: 6rem;
     font-size: 2rem;
