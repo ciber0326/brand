@@ -90,9 +90,10 @@
 }
 .service-hover-img {
     width: 50rem;
+    aspect-ratio: 16/9;
     border-radius: 2.4rem;
     flex: 0 0 auto;
-    object-fit: content;
+    object-fit: cover;
     /* transform: translateX(100%); */
     transition: 0.8s all ease-in-out;
     
@@ -166,6 +167,18 @@
     .service-item:hover .service-body {
         padding: 2rem 6rem 2rem 2rem;
         height: 44rem;
+    }
+    .service-item:nth-child(1):hover .service-body {
+        padding: 2rem 6rem 2rem 2rem;
+        height: 34rem;
+    }
+    .service-item:nth-child(2):hover .service-body {
+        padding: 2rem 6rem 2rem 2rem;
+        height: 42rem;
+    }
+    .service-item:nth-child(4):hover .service-body {
+        padding: 2rem 6rem 2rem 2rem;
+        height: 22rem;
     }
     .service-header {
         font-size: 18px;
