@@ -173,6 +173,56 @@ iframe.company-map {
     float: left;
     padding-top: 2rem;
 }
+.sec-rec-cont {
+    display: flex;
+    flex-wrap: wrap;
+    aspect-ratio: 3/1;
+    padding: 0 0 !important;
+}
+.rec-wrapper {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    /* display: flex; */
+    display: inline-block;
+    padding: 8rem 0;
+}
+.rec-wrapper h3 {
+    position: relative;
+    font-size: 3rem;
+    text-align: center!important;
+}
+.rec-wrapper h3 + p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+.rec-wrapper .href-more {
+    color: #fff !important;
+}
+.rec-wrapper .btn-txt:after {
+    background-color: #fff !important;
+}
+.rec-wrapper h3 span.font-en {
+    font-size: 1.8em;
+}
+.rec-wrapper h3:after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("../images/icon-plus-white.svg");
+}
+.sec-rec-cont .rec-wrapper:first-child {
+    background-image: linear-gradient(#0000007a, #0000003d), url(../images/company/comapny.jpg);
+}
+.sec-rec-cont .rec-wrapper:nth-child(2){
+    background-image: linear-gradient(#0000007a, #0000003d), url("../images/contact/contact.jpeg");
+}
+
 @media screen and (max-width: 1440px) {
     .outline-wrapper {
         column-gap: 8rem;
@@ -235,6 +285,18 @@ iframe.company-map {
     }
     .bio-wrapper h2 {
         font-size: 3rem;
+    }
+    .rec-wrapper {
+        width: 100%;
+        height: unset;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        /* display: flex; */
+        display: inline-block;
+        padding: 8rem 0;
+        aspect-ratio: 3 / 1;
     }
     
 }
