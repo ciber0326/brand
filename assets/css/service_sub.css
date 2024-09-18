@@ -1,5 +1,6 @@
 .servicePageDetail-wrapper h4 {
     font-size: 3.6rem;
+    width: 40%;
 }
 .servicePageDetail-wrapper h4 span.font-ja {
     font-weight: 400;
@@ -13,6 +14,7 @@
     margin-bottom: 4rem;
     line-height: 2;
   }
+
 .section-group {
     flex: 0 0 auto;
     width: 80%;
@@ -41,13 +43,13 @@
   ul.sticky li.active::before {
     position: absolute;
     content: "";
-    left: -20%;
-    top: 50%;
+    left: -10%;
+    top: 42%;
     width: 1rem;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-color: var(--clr-blue);
-  }
+}
 
   [alt="service-bio-img"] {
     width: 100%;
@@ -60,7 +62,10 @@
 
   }
   #servicePageDetail h3 {
-    font-size: 4rem;
+    font-size: 5.2rem;
+  }
+  #servicePageDetail h3 span.font-ja {
+    font-size: 0.4em;
   }
 .sec-sub-service-02 p {
     width: fit-content;
@@ -71,18 +76,65 @@
   font-size: 0.6em;
   font-weight: 400;
 }
+.sub-service-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-service-wrapper p {
+  width: 60% !important;
+  margin-block: 10rem;
+  line-height: 2;
+}
+.sub-brand-img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem; /* Optional gap between the images */
+  justify-content: center;
+}
+.sub-brand-img-wrapper img {
+  width: calc((100% - 4rem)/2);
+  object-fit: none;
+  aspect-ratio: 1/1;
+  
+}
+
+@media screen and (max-width: 1080px) {
+  .sticky-navi {
+    display: none;
+}
+.section-group {
+  width: 100%;
+}
+}
+
 @media screen and (max-width: 768px) {
-    .sticky-navi {
-        display: none;
-    }
-    .section-group {
-        width: 100%;
-    }
+  .servicePageDetail-wrapper {
+    padding: 0rem 0;
+}
+  .sub-service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.servicePageDetail-wrapper h4 {
+  font-size: 2.8rem;
+  width: 100%;
+}
+.sub-service-wrapper p {
+  width: 100% !important;
+  margin-block: 0;
+  margin-block-end: 4rem;
+  line-height: 2;
+}
+    
 }
 @media screen and (max-width: 425px) {
-    #servicePageDetail h3 {
-        font-size: 2.8rem;
-    }
+  #servicePageDetail h3 {
+    font-size: 4.2rem;
+}
+#servicePageDetail h3 span.font-ja {
+  font-size: 0.6em;
+}
     .servicePageDetail-wrapper {
         padding: 2rem 0;
     }

@@ -704,7 +704,7 @@ h2 span.font-ja {
 .sec-rec-cont {
     display: flex;
     flex-wrap: wrap;
-    aspect-ratio: 3/1;
+    aspect-ratio: 4/1;
     padding: 0 0 !important;
 }
 .rec-wrapper {
@@ -720,12 +720,17 @@ h2 span.font-ja {
 }
 .rec-wrapper h3 {
     position: relative;
-    font-size: 3rem;
+    font-size: 3rem !important;
     text-align: center!important;
+    margin-bottom: 5rem;
+}
+.rec-wrapper h3 span.font-ja{
+    font-size: inherit !important;
+    font-weight: inherit !important;
 }
 .rec-wrapper h3 + p {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
     line-height: 2;
 }
 .rec-wrapper .href-more {
@@ -735,7 +740,7 @@ h2 span.font-ja {
     background-color: #fff !important;
 }
 .rec-wrapper h3 span.font-en {
-    font-size: 1.8em;
+    font-size: 1.8em !important;
 }
 .rec-wrapper h3:after {
     content: "";
