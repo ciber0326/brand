@@ -1,10 +1,21 @@
 .servicePageDetail-wrapper h4 {
-    font-size: 3.6rem;
-    width: 40%;
+  font-size: 3.6rem;
+  width: 30%;
+  color: var(--clr-blue);
+  text-transform: uppercase;
+}
+.servicePageDetail-wrapper h4.odd {
+  font-size: 3rem;
+  width: unset !important;
+  font-weight: 900;
+}
+.servicePageDetail-wrapper h4.odd span {
+  font-size: inherit !important;
 }
 .servicePageDetail-wrapper h4 span.font-ja {
-    font-weight: 400;
-    font-size: 0.6em;
+  font-weight: 700;
+  font-size: 0.6em;
+  
 }
 .servicePageDetail-wrapper {
     padding: 10rem 0;
@@ -31,6 +42,7 @@
     top: 12rem;
     list-style: none;
     height: fit-content;
+    width: 16%;
   }
   
   .sticky-navi li {
