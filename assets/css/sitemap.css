@@ -13,9 +13,9 @@
   font-family: 1.8rem;
   line-height: 2.6;
 }
-#sitemap ul {
+#sitemap nav {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 4rem;
   font-size: 16px;
   text-transform: uppercase;
@@ -34,7 +34,7 @@ background-position: center center,center center;
 
 }
 @media screen and (max-width: 1200px) {
-  #sitemap ul {
+  #sitemap nav {
     display: grid;
     grid-template-columns: 100%;
     column-gap: 4rem;
