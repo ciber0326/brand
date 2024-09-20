@@ -189,8 +189,17 @@
   left: 50%;
   transform: translateX(-50%);
   width: 30rem;
+  /* border: 1px solid var(--clr-blue); */
+  border: 1px solid #fff;
+  background-color: #ffffffc4;
 }
 [alt="consult-img-13"] {
+  display: block;
+  margin: 0 auto;
+  margin-block: 10rem 10rem;
+  width: 80rem;
+}
+[alt="consult-img-14"] {
   display: block;
   margin: 0 auto;
   margin-block: 10rem 10rem;
@@ -206,7 +215,7 @@
 }
 .flow-lists li {
   flex: 0 0 auto;
-  width: 46rem;
+  width: 48rem;
   /* border: 1px solid var(--clr-blue); */
   padding: 8rem 8rem;
   border-radius: 2.4rem;
@@ -225,14 +234,15 @@
   position: absolute;
   top: 0;
   left: 4rem;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   background-color: #fff;
   font-family: var(--font-en);
   font-size: 4rem;
   font-weight: 900;
-  -webkit-text-fill-color: transparent;
+  color: var(--clr-blue);
+  /* -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: var(--clr-blue);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px; */
 }
 .sec-flow h4 {
   margin-bottom: 8rem;
@@ -314,6 +324,10 @@
   margin: 0 auto;
 }
 [alt="consult-img-13"] {
+  
+  width: 70%;
+}
+[alt="consult-img-14"] {
   
   width: 70%;
 }
