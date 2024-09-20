@@ -392,6 +392,27 @@ $(document).ready(function () {
         });
     }
 });
+$('.service-item').hover(function() {
+  var $serviceItem = $(this);
+  var $serviceBody = $serviceItem.find('.service-body');
+  
+  // Toggle between expanding and collapsing with CSS transition
+  if ($serviceItem.hasClass('active')) {
+      $serviceBody.css('height', '0'); // Collapse
+      $serviceItem.removeClass('active');
+  } else {
+      var autoHeight = $serviceBody.prop('scrollHeight') + 'px'; // Get full height
+      $serviceBody.css('height', autoHeight); // Expand
+      $serviceItem.addClass('active');
+
+      // Collapse other items
+      $('.service-item').not($serviceItem).each(function() {
+          $(this).find('.service-body').css('height', '0'); // Collapse others
+          $(this).removeClass('active');
+      });
+  }
+});
+
 $('.to-top').click(function() {
   $('html, body').animate({ scrollTop: 0 }, 'smooth');
 });
