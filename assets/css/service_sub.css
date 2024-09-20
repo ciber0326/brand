@@ -115,7 +115,7 @@
 .sub-brand-img-wrapper img {
   width: calc((100% - 4rem)/2);
   object-fit: none;
-  aspect-ratio: 1.5;
+  aspect-ratio: 2.2;
   
 }
 
