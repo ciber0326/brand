@@ -1,6 +1,7 @@
 .servicePageDetail-wrapper h4 {
   font-size: 3.6rem;
   width: 30%;
+  min-width: max-content;
   color: var(--clr-blue);
   text-transform: uppercase;
 }
@@ -12,10 +13,13 @@
 .servicePageDetail-wrapper h4.odd span {
   font-size: inherit !important;
 }
-.servicePageDetail-wrapper h4 span.font-ja {
-  font-weight: 700;
-  font-size: 0.6em;
+.servicePageDetail-wrapper h4 span.font-en {
+  font-weight: 900;
+  font-size: 0.8em;
   
+}
+.servicePageDetail-wrapper h4 span.font-ja {
+  font-weight: 900;
 }
 .servicePageDetail-wrapper {
     padding: 10rem 0;
@@ -77,7 +81,7 @@
     font-size: 5.2rem;
   }
   #servicePageDetail h3 span.font-ja {
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
 .sec-sub-service-02 p {
     width: fit-content;
@@ -86,7 +90,7 @@
 }
 #servicePageDetail h3 .font-ja {
   font-size: 0.6em;
-  font-weight: 400;
+  
 }
 .sub-service-wrapper {
   display: flex;
@@ -106,7 +110,7 @@
 .sub-brand-img-wrapper img {
   width: calc((100% - 4rem)/2);
   object-fit: none;
-  aspect-ratio: 1/1;
+  aspect-ratio: 2.8;
   
 }
 
