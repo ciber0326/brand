@@ -108,6 +108,10 @@ h2 span.font-ja {
 .mr-0 {
     margin-right: 0;
 }
+.mx-auto {
+    margin-inline: auto auto;
+    width: fit-content;
+}
 
 /* font */
 .font-ja {

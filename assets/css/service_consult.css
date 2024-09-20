@@ -17,12 +17,13 @@
   -webkit-text-stroke-width: 1px;
 }
 .sec-consult-bio h3 small {
-  font-size: 0.4em;
+  font-size: 0.6em;
+  font-weight: 900;
 }
 #serviceConsult h4 {
   flex: 0 0 auto;
   font-size: 2.6rem;
-  text-indent: 2em;
+  
   line-height: 2.2;
 }
 .sec-consult-bio-desc p {
@@ -43,16 +44,16 @@
 }
 
 .worry-wrapper {
-    position: relative;
-    margin: 0 auto;
-    background-color: #333333eb;
-    color: #fff;
-    padding-inline: 8rem;
-    padding-block-start: 14rem;
-    padding-block-end: 8rem;
-    border-radius: 3.2rem;
-    margin-top: 10rem;
-    width: 100rem;
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffffffc4;
+  color: var(--clr-black);
+  padding-inline: 8rem;
+  padding-block-start: 14rem;
+  padding-block-end: 8rem;
+  border-radius: 3.2rem;
+  margin-top: 10rem;
+  width: 100rem;
 }
 .worry-wrapper ul {
   font-size: 1.8rem;
@@ -60,7 +61,7 @@
   width: 60%;
 }
 .worry-wrapper li {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--clr-blue);
   padding-inline: 2em;
   position: relative;
 }
@@ -72,7 +73,7 @@
   transform: translateY(-50%);
   width: 2rem;
   aspect-ratio: 1/1;
-  background-image: url(../images/checkbox.png);
+  background-image: url(../images/checkbox.svg);
   background-size: 100% 100%;
 
 }
