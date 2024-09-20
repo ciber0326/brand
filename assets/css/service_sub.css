@@ -16,9 +16,10 @@
 .servicePageDetail-wrapper h4 span.font-en {
   font-weight: 900;
   font-size: 0.8em;
-  
+  line-height: 2;
 }
 .servicePageDetail-wrapper h4 span.font-ja {
+  line-height: 2;
   font-weight: 900;
   color: var(--clr-black);
 }
@@ -28,7 +29,6 @@
 .servicePageDetail-wrapper p {
     font-size: clamp(14px,18rem,16px);
     margin-bottom: 4rem;
-    line-height: 2;
     
   }
   p.title-desc {
@@ -84,10 +84,22 @@
   }
   #servicePageDetail h3 {
     font-size: 5.2rem;
+    position: relative;
+  }
+  #servicePageDetail h3:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    width: 1.2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--clr-blue);
   }
   #servicePageDetail h3 span.font-ja {
     font-size: 0.6em;
   }
+  
 .sec-sub-service-02 p {
     width: fit-content;
     margin: 2rem auto;

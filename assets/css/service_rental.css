@@ -11,7 +11,10 @@
   font-weight: 500;
   padding-left: 2em;
 }
-
+#servicePageRental p {
+  font-size: 1.8rem;
+  line-height: 2;
+}
 .rental-bio-wrapper h3 {
   font-size: 5.2rem;
 }
@@ -43,6 +46,9 @@
   line-height: 2.6;
   font-size: 1.8rem;
 }
+.rental-bio-wrapper .bio-title p.weight-700 {
+  font-size: 2.2rem;
+}
 
 [alt="service-rental-desc"] {
   width: 30rem;
@@ -52,13 +58,18 @@
 
 }
 
-[alt="service-rental-desc-small"] {
+/* [alt="service-rental-desc-small"] {
   width: 50rem;
   position: absolute;
   right: 4rem;
   bottom: 0;
+} */
+[alt="service-rental-desc-img"] {
+  display: block;
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 4rem 10rem;
 }
-
 
 /* sec-rental-desc */
 .sec-rental-desc {
@@ -208,7 +219,18 @@ body {
   line-height: 2;
 }
 .sec-desc-more  P {
-  padding-block-start: 6rem;
+  padding-block-start: 4rem;
+}
+.sec-desc-more h4 {
+  font-size: 2.6rem;
+  
+  max-width: max-content;
+  color: var(--clr-blue);
+  text-transform: uppercase;
+}
+.sec-desc-more h4 span.font-ja {
+  font-weight: 900;
+  color: var(--clr-black);
 }
 
 @media screen and (max-width: 1356px) {
