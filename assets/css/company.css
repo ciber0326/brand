@@ -40,14 +40,21 @@
     align-items: center;
     row-gap: 4rem;
 }
-.bio-wrapper h2 {
-    font-size: 4.4rem;
+.sec-company-bio h2.bg-title {
+    font-size: 5.2rem;
+    margin-block-end: 0;
+}
+.sec-company-bio h2.bg-title span.font-ja {
+    font-size: 0.4em;
+}
+.bio-wrapper h2.sm-title {
+    font-size: 3.4rem;
     margin-bottom: 0;
 }
-.bio-wrapper h2 span.font-ja {
+.bio-wrapper h2.sm-title span.font-ja {
     font-size: 0.6em;
 }
-.bio-wrapper h2 span.date-bigger {
+.bio-wrapper h2.sm-title span.date-bigger {
     font-size: 1.6em;
 }
 .sec-company-sentence p {
