@@ -10,24 +10,21 @@ main#recruit p {
 }
 main#recruit h3 {
   flex: 0 0 auto;
-  width: 30%;
   font-size: 5.2rem;
+  margin-block-start: 0;
  
 }
-main#recruit h3 span {
+main#recruit h3 span.font-en {
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: var(--clr-blue);
   -webkit-text-stroke-width: 1px;
 }
 
-main#recruit h3 small {
-  font-size: 0.4em;
-  font-weight: 400;
-  color: var(--clr-black);
-  -webkit-text-fill-color: unset;
-  -webkit-text-stroke-color: unset;
-  -webkit-text-stroke-width: unset;
+main#recruit h3 span.font-ja {
+  font-size: 0.6em;
+  font-weight: 900;
+  
 }
 .sec-recruit-bio {
   padding-bottom: 4rem;
@@ -35,6 +32,7 @@ main#recruit h3 small {
   background-attachment: fixed;
   background-size: 100% 100%, cover;
   background-position: center center, center center;
+  aspect-ratio: 3.4;
 }
 .recruit-bio-wrapper {
   display: flex;
@@ -155,6 +153,76 @@ main#recruit h3 small {
   border: 1px solid var(--clr-blue);
   transition: 0.3s background-color ease-in-out;
 }
+.rec-detail-info-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.rec-detail-info-lists> li {
+  
+  font-size: 4rem;
+  padding-inline: 5rem;
+  padding-block: 4rem;
+}
+.rec-detail-info-lists> li:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  position: relative;
+}
+.rec-detail-info-lists> li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background-color: var(--clr-blue);
+}
+.rec-detail-info-lists> li > span:last-child {
+  line-height: 1.6;
+}
+.rec-detail-info-lists> li:last-child ul {
+  display: flex;
+  column-gap: 6rem;
+  position: relative;
+}
+.rec-detail-info-lists> li:last-child ul:after {
+  content: ":";
+  position: absolute;
+  left: 48%;
+  font-size: 2.8em;
+  transform: translateX(-50%);
+  bottom: -19%;
+}
+.rec-detail-info-lists> li:last-child ul li {
+  display: flex;
+  flex-direction: column;
+}
+.rec-detail-info-lists> li:last-child ul li>span:first-child {
+  line-height: 1.6;
+  font-size: 2.2rem;
+}
+.rec-detail-info-lists> li:last-child ul li>span:last-child {
+  line-height: 1.4;
+}
+.rec-desc {
+  font-size: 1.8rem;
+  padding-inline: auto auto;
+  margin-block: 4rem 4rem;
+  text-indent: 2em;
+}
+.rec-desc ~ hr {
+  margin-block: 0 4rem;
+}
+@media screen and (max-width: 1120px) {
+  .rec-detail-info-lists> li {
+    font-size: 3.2rem;
+    padding-inline: 5rem;
+    padding-block: 4rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .recruit-lists {
     display: grid;
@@ -165,6 +233,26 @@ main#recruit h3 small {
     max-width: 660px;
     margin: 0 auto;
 }
+.rec-detail-info-lists> li {
+  font-size: 3rem;
+  padding-inline: 5rem;
+  padding-block: 4rem;
+}
+
+}
+@media screen and (max-width: 970px) {
+  .rec-detail-info-lists> li {
+    font-size: 2.8rem;
+    padding-inline: 5rem;
+    padding-block: 4rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .rec-detail-info-lists> li {
+    font-size: 2.4rem;
+    padding-inline: 2rem;
+    padding-block: 4rem;
+  }
 }
 @media screen and (max-width: 768px) {
   main#recruit h3 {
@@ -189,6 +277,30 @@ main#recruit p {
   font-size: 1.6rem;
   line-height: 2.6;
 }
+.rec-detail-info-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.rec-detail-info-lists> li {
+  font-size: 4.2rem;
+  padding-inline: 2rem;
+  padding-block: 4rem;
+  width: fit-content;
+  margin-inline: auto auto;
+}
+.rec-detail-info-lists> li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: unset;
+  bottom: 0;
+  transform: translateX(50%);
+  width: 160%;
+  height: 1px;
+  background-color: var(--clr-blue);
+}
 }
 @media screen and (max-width: 425px) {
  
@@ -203,5 +315,22 @@ main#recruit p {
 }
 .recruit-lists li > a span {
   font-size: 1.4rem;
+}
+.rec-detail-info-lists> li {
+  font-size: 2.2rem;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  width: fit-content;
+  margin-inline: auto auto;
+}
+main#recruit p {
+  
+  padding-inline: 2em;
+}
+.sec-recruit-bio {
+  background-size: 100% 100%, 100%;
+}
+.recruit-detail-content {
+  padding: 2rem 2rem;
 }
 }

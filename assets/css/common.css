@@ -493,11 +493,13 @@ h2 span.font-ja {
 }
 .larger {
     font-size: 2.2em;
+    
     font-weight: 900;
 }
 .largest-number {
     font-size: 3em;
     font-weight: 900;
+    font-family: var(--font-en);
 
 }
 @media screen and (max-width: 1356px) {
