@@ -617,14 +617,15 @@ h2 span.font-ja {
     
   }
   [alt="contact_logo"] {
-    transform: perspective(200px) rotateX(0deg) rotateY(-32deg);
-    filter: drop-shadow(-2px 4px 11px var(--clr-grey));
+    transform: perspective(207px) rotateX(0deg) rotateY(-11deg) translate(-50%, -50%);
+    filter: drop-shadow(3px 1px 2px var(--clr-grey));
     position: absolute;
-    left: 40%;
-    top: 40%;
+    left: 44%;
+    top: 45%;
+    width: 65rem;
     z-index: 0;
     opacity: 0.3;
-  }
+}
   @keyframes draw {
       0% {stroke-dashoffset: 565;}
       100% {stroke-dashoffset: 0;}

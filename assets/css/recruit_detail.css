@@ -18,16 +18,16 @@ main#recruitDetail h3 {
   font-size: 5.2rem;
  
 }
-main#recruitDetail h3 span {
+main#recruitDetail h3 span.font-en {
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: var(--clr-blue);
   -webkit-text-stroke-width: 1px;
 }
 
-main#recruitDetail h3 small {
-  font-size: 0.4em;
-  font-weight: 400;
+main#recruitDetail h3 span.font-ja {
+  font-size: 0.6em;
+  font-weight: 900;
   color: var(--clr-black);
 }
 .sec-recruit-detail-bio {
