@@ -1,9 +1,21 @@
 main#memberPage h2 {
     font-size: 5.2rem;
+    position: relative;
+    text-transform: uppercase;
+}
+main#memberPage h2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    width: 1.2rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--clr-blue);
 }
 main#memberPage h2 span.font-ja {
-    font-size: 0.4em;
-    font-weight: 400;
+    font-size: 0.6em;
+    font-weight: 900;
 }
 .sec-member-gallery {
     padding: 10rem 0 10rem;
