@@ -211,7 +211,7 @@ main#recruit h3 span.font-ja {
   font-size: 1.8rem;
   padding-inline: auto auto;
   margin-block: 4rem 4rem;
-  text-indent: 2em;
+  /* text-indent: 2em; */
 }
 .rec-desc ~ hr {
   margin-block: 0 4rem;
