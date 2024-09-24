@@ -18,6 +18,14 @@
 .bg-clr-black {
     background-color: var(--clr-black);
 }
+/* border option */
+.border-blue {
+    border-color: var(--clr-blue);
+}
+.border-1 {
+    border-width: 1px;
+    border-style: solid;
+}
 /* heading tag */
 h2 {
     font-size: 5.2rem;

@@ -15,7 +15,7 @@ main#brand h3 {
   flex: 0 0 auto;
   width: 40rem;
 }
-main#brand h3 span {
+main#brand h3 span.font-en {
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: var(--clr-blue);
@@ -23,22 +23,49 @@ main#brand h3 span {
 }
 
 main#brand h3 small {
-  font-size: 0.4em;
-  font-weight: 400;
+  font-size: 0.6em;
+  font-weight: 700;
   color: var(--clr-black);
 }
+main#brand h3 + p {
+  margin-block: 4rem 8rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
 main#brand .brand-lists h5 {
   text-align: center;
-    font-size: 5.2rem;
-    margin-block: 0.4em;
-    border-bottom: 2px solid var(--clr-blue);
-    margin-block-end: 10rem;
+  font-size: 3.2rem;
+  margin-block: 0.4em;
 }
 .brand-detail-img {
-  width: 100%;
+  width: 40%;
+  flex: 0 0 auto;
+}
+.brand-lists li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10rem;
+  border-bottom: 1px solid #1ea36642;
+}
+.brand-lists li .brand-item-content {
+  position: relative;
+  width: 50%;
+}
+.brand-lists li .brand-item-content:after {
+  position: absolute;
+  content: "";
+  left: -20%;
+  top: 50%;
+  height: 70%;
+  width: 1px;
+  background-color: var(--clr-blue);
+  transform: translateY(-50%);
 }
 .brand-lists li:not(:last-child) {
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
+  /* border-bottom: 1px solid #1ea36642; */
 }
 .sec-brand-bio {
   padding-bottom: 4rem;
@@ -61,7 +88,22 @@ main#brand .brand-lists h5 {
 .sec-brand-content h4 {
   font-size: 3.2rem;
 }
-
+.brand-desc {
+  font-size: 1.8rem;
+  line-height: 2;
+  padding-block: 4rem;
+}
+#brand .rec-wrapper h3 {
+  width: unset;
+}
+main#brand .rec-wrapper h3 span.font-en {
+  -webkit-text-fill-color: unset;
+    -webkit-text-stroke-color: unset;
+    -webkit-text-stroke-width: unset;
+}
+main#brand .rec-wrapper h3 + p {
+  margin-block: 0 0 !important;
+}
 @media screen and (max-width: 768px) {
   main#brand h3 {
     margin-block: 2rem 0rem;
@@ -84,6 +126,19 @@ main#brand .brand-lists h5 {
   margin-block: 0.4em;
   border-bottom: 2px solid var(--clr-blue);
   margin-block-end: 2rem;
+}
+.brand-lists li {
+  padding-block: 10rem;
+  border-bottom: 1px solid #1ea36642;
+  flex-direction: column;
+}
+.brand-detail-img {
+  width: 100%;
+  flex: 0 0 auto;
+}
+.brand-lists li .brand-item-content {
+  position: relative;
+  width: 100%;
 }
 }
 @media screen and (max-width: 425px) {
@@ -113,5 +168,26 @@ main#brand h3 {
   font-size: 1.9rem;
   line-height: 2;
   word-wrap: break-word;
+}
+.sec-brand-bio {
+  padding-bottom: 4rem;
+  background-attachment: fixed;
+  background-size: 100% 100%, 100%;
+  background-position: center center, center center;
+  aspect-ratio: 4 / 1;
+}
+main#brand h3 + p {
+  margin-block: 4rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.brand-lists li {
+  padding-block: 2rem;
+  border-bottom: 1px solid #1ea36642;
+  flex-direction: column;
+}
+main#brand .brand-lists h5 {
+  
+  margin-block-end: 4rem;
 }
 }
