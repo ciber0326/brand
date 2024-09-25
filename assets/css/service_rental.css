@@ -13,6 +13,7 @@
   font-size: 2.8rem;
   font-weight: 500;
   padding-left: 0;
+  font-weight: 900;
 }
 #servicePageRental h5 span.font-en {
   font-size: 0.8em;
@@ -38,8 +39,8 @@
 }
 
 .rental-bio-wrapper h3 span.font-ja {
-  font-size: 0.4em;
-  font-weight: 400;
+  font-size: 0.6em;
+  font-weight: 700;
 }
 .rental-bio-wrapper {
   display: flex;
@@ -251,8 +252,8 @@ body {
   font-size: 1.8rem;
   line-height: 2;
 }
-.sec-desc-more  P {
-  padding-block-start: 4rem;
+.sec-desc-more p {
+  padding-block-start: 0;
 }
 .sec-desc-more h4 {
   font-size: 2.6rem;
