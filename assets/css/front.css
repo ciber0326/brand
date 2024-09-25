@@ -423,6 +423,8 @@ h1 .desc {
 .service-item-footer {
     padding: 2.4rem 2rem;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
 }
 .sec-service .btn-view-all {
     margin-top: 4rem;
