@@ -28,7 +28,7 @@ main#recruit h3 span.font-ja {
 }
 .sec-recruit-bio {
   padding-bottom: 4rem;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(../images/recruit/recruit-bg.jpeg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(../images/recruit/recruit-bg.png);
   background-attachment: fixed;
   background-size: 100% 100%, cover;
   background-position: center center, center center;
@@ -82,6 +82,15 @@ main#recruit h3 span.font-ja {
   object-fit: cover;
   object-position: center center;
   
+}
+.recruit-lists > li:nth-child(4) > a img {
+  object-position: 58% center;
+}
+.recruit-lists > li:nth-child(5) > a img {
+  object-position: 55% center;
+}
+.recruit-lists > li:nth-child(6) > a img {
+  object-position: 50% center;
 }
 .recruit-detail-content {
   padding: 2rem 4rem;
@@ -209,7 +218,7 @@ main#recruit h3 span.font-ja {
 }
 .rec-desc {
   font-size: 1.8rem;
-  padding-inline: auto auto;
+  padding-inline: 6rem;
   margin-block: 4rem 4rem;
   /* text-indent: 2em; */
 }
