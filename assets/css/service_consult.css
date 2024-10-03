@@ -58,24 +58,25 @@
 .worry-wrapper ul {
   font-size: 1.8rem;
   line-height: 3;
-  width: 60%;
+  width: 100%;
 }
 .worry-wrapper li {
   border-bottom: 1px solid var(--clr-blue);
-  padding-inline: 2em;
+  padding-inline: 6em;
   position: relative;
+  line-height: 4.4;
+  font-size: 2rem;
 }
 .worry-wrapper li::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  width: 2rem;
-  aspect-ratio: 1/1;
+  width: 4rem;
+  aspect-ratio: 1 / 1;
   background-image: url(../images/checkbox.svg);
   background-size: 100% 100%;
-
 }
 [alt="consult-02"] {
   position: absolute;
@@ -344,6 +345,13 @@
   content: none;
  
 }
+.worry-wrapper li {
+  border-bottom: 1px solid var(--clr-blue);
+  padding-inline: 5em;
+  position: relative;
+  line-height: 4.4;
+  font-size: 2rem;
+}
 }
 @media screen and (max-width: 426px) {
   .sec-consult-bio h3 {
@@ -371,7 +379,7 @@
   padding-inline: 2rem;
 }
 .worry-wrapper li::before {
-  top: 2.5rem;
+  top: 4rem;
   
 }
 .mid-title {
@@ -402,5 +410,23 @@
 .point-lists li .point-order:after {
   content: none;
  
+}
+.worry-wrapper li {
+  border-bottom: 1px solid var(--clr-blue);
+  padding-inline: 2.8em;
+  position: relative;
+  line-height: 4.4;
+  font-size: 1.6rem;
+}
+.worry-wrapper li::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  background-image: url(../images/checkbox.svg);
+  background-size: 100% 100%;
 }
 }
