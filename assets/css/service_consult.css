@@ -48,7 +48,7 @@
   margin: 0 auto;
   background-color: #ffffffc4;
   color: var(--clr-black);
-  padding-inline: 8rem;
+  padding-inline: 18rem;
   padding-block-start: 14rem;
   padding-block-end: 8rem;
   border-radius: 3.2rem;
@@ -65,7 +65,7 @@
   padding-inline: 6em;
   position: relative;
   line-height: 4.4;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 .worry-wrapper li::before {
   content: "";
@@ -291,6 +291,7 @@
   border-radius: 2.7rem;
   margin-top: 10rem;
   width: 100%;
+  padding-inline: 8rem;
 }
 .worry-wrapper ul {
   font-size: 1.6rem;
