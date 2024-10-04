@@ -62,6 +62,13 @@
     font-size: 1.8rem;
 }
 
+[alt="brand-company"] {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-block: 4rem 0;
+    border-radius: 2.4rem;
+}
 [alt="comapny-building"] {
     width: 40%;
     margin-right: 8rem;
