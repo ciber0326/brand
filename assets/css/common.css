@@ -765,7 +765,7 @@ h2 span.font-ja {
     background-image: url("../images/icon-plus-white.svg");
 }
 .sec-rec-cont .rec-wrapper:first-child {
-    background-image: linear-gradient(#0000007a, #0000003d), url(../images/company/comapny.jpg);
+    background-image: linear-gradient(#0000007a, #0000003d), url("../images/company/company.jpg");
 }
 .sec-rec-cont .rec-wrapper:nth-child(2){
     background-image: linear-gradient(#0000007a, #0000003d), url("../images/contact/contact.jpeg");
