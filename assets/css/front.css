@@ -646,8 +646,18 @@ a:has(.member-photo) {
     width: 100%;
     aspect-ratio: 3/1;
     overflow: hidden;
+    position: relative;
 }
-
+.gallery-employee:after {
+    content: "";
+    background-color: #33333361;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
 .gallery-employee .swiper-wrapper{
     transition-timing-function: linear !important;
     width: 100%;
