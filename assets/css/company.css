@@ -129,7 +129,7 @@ iframe.company-map {
     aspect-ratio: 4/1;
     background-image: url(../images/company/brand.jpg);
     background-attachment: fixed;
-    background-size: 100% cover;
+    background-size: 100%;
     background-position: 0 0;
 }
 .sec-brand-logo h2 {
