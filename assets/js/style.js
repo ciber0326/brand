@@ -1,22 +1,22 @@
 $(document).ready(function () {
 
   // Disable autoplay on mobile devices
-  if (!/Mobi/.test(navigator.userAgent)) {
-    document.querySelector('video').autoplay = true;
-  } else {
-    document.querySelector('video').removeAttribute('autoplay');
-  }
+if (!/Mobi/.test(navigator.userAgent)) {
+  document.querySelector('video').autoplay = true;
+} else {
+  document.querySelector('video').removeAttribute('autoplay');
+}
 
   $('.has-dropdown').hover(
-    function () {
-      // On hover, slide down the dropdown
-      $(this).find('.dropdown').stop(true, true).slideDown('fast');
+    function() {
+        // On hover, slide down the dropdown
+        $(this).find('.dropdown').stop(true, true).slideDown('fast');
     },
-    function () {
-      // On hover out, slide up the dropdown
-      $(this).find('.dropdown').stop(true, true).slideUp('fast');
+    function() {
+        // On hover out, slide up the dropdown
+        $(this).find('.dropdown').stop(true, true).slideUp('fast');
     }
-  );
+);
 
   $('.hamburger').on('click', function () {
     $(".sp-gloabal-menu").addClass("active")
@@ -378,51 +378,51 @@ $(document).ready(function () {
     });
   }
 
-  $('.faq-question')?.click(function () {
+  $('.faq-question')?.click(function() {
     var $faqItem = $(this).parent();
     var $answer = $faqItem.find('.faq-answer');
-
+    
     // Check if the current item is already active
     if ($faqItem.hasClass('active')) {
-      // Collapse the active item
-      $answer.slideUp();
-      $faqItem.removeClass('active');
+        // Collapse the active item
+        $answer.slideUp();
+        $faqItem.removeClass('active');
     } else {
-      // Expand the clicked item
-      $answer.slideDown();
-      $faqItem.addClass('active');
-
-      // Collapse other open items
-      $('.faq-item').not($faqItem).each(function () {
-        $(this).removeClass('active');
-        $(this).find('.faq-answer').slideUp();
-      });
+        // Expand the clicked item
+        $answer.slideDown();
+        $faqItem.addClass('active');
+        
+        // Collapse other open items
+        $('.faq-item').not($faqItem).each(function() {
+            $(this).removeClass('active');
+            $(this).find('.faq-answer').slideUp();
+        });
     }
-  });
-  $('.service-item').hover(function () {
-    var $serviceItem = $(this);
-    var $serviceBody = $serviceItem.find('.service-body');
-
-    // Toggle between expanding and collapsing with CSS transition
-    if ($serviceItem.hasClass('active')) {
+});
+$('.service-item').hover(function() {
+  var $serviceItem = $(this);
+  var $serviceBody = $serviceItem.find('.service-body');
+  
+  // Toggle between expanding and collapsing with CSS transition
+  if ($serviceItem.hasClass('active')) {
       $serviceBody.css('height', '0'); // Collapse
       $serviceItem.removeClass('active');
-    } else {
+  } else {
       var autoHeight = $serviceBody.prop('scrollHeight') + 'px'; // Get full height
       $serviceBody.css('height', autoHeight); // Expand
       $serviceItem.addClass('active');
 
       // Collapse other items
-      $('.service-item').not($serviceItem).each(function () {
-        $(this).find('.service-body').css('height', '0'); // Collapse others
-        $(this).removeClass('active');
+      $('.service-item').not($serviceItem).each(function() {
+          $(this).find('.service-body').css('height', '0'); // Collapse others
+          $(this).removeClass('active');
       });
-    }
-  });
+  }
+});
 
-  $('.to-top').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 'smooth');
-  });
+$('.to-top').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, 'smooth');
+});
   // ///////////////////////////////////////  prevent safe ///////////////////////////////////////////////////////////
 
   // Prevent right-click context menu
