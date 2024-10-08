@@ -5,43 +5,50 @@
 #servicePageRental h4 {
   font-size: 3.6rem;
 }
+
 #servicePageRental h4 span.font-en {
   font-size: 0.8em;
   line-height: 2;
 }
+
 #servicePageRental h5 {
   font-size: 2.8rem;
   font-weight: 500;
   padding-left: 0;
   font-weight: 900;
 }
+
 #servicePageRental h5 span.font-en {
   font-size: 0.8em;
   line-height: 2;
 }
+
 #servicePageRental p {
   font-size: 1.8rem;
   line-height: 2;
 }
+
 .rental-bio-wrapper h3 {
   font-size: 5.2rem;
   position: relative;
 }
+
 .rental-bio-wrapper h3:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    width: 1.2rem;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background-color: var(--clr-blue);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 1.2rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--clr-blue);
 }
 
 .rental-bio-wrapper h3 span.font-ja {
   font-size: 0.6em;
   font-weight: 700;
 }
+
 .rental-bio-wrapper {
   display: flex;
   justify-content: space-between;
@@ -65,6 +72,7 @@
   line-height: 2.6;
   font-size: 1.8rem;
 }
+
 .rental-bio-wrapper .bio-title p.weight-700 {
   font-size: 2.2rem;
 }
@@ -76,6 +84,7 @@
   top: 6rem;
 
 }
+
 [alt="service-rental-side-02"] {
   width: 30rem;
   position: absolute;
@@ -84,6 +93,7 @@
   /* transform: translateX(-30%); */
 
 }
+
 [alt="service-rental-side-03"] {
   width: 30rem;
   position: absolute;
@@ -147,12 +157,14 @@ body {
   background-color: #fff;
   padding-inline: 4rem;
 }
+
 .gallery-container h4 {
-    padding-inline: 8rem;
-    top: 4rem;
-    width: 100%;
-    font-size: 4rem;
+  padding-inline: 8rem;
+  top: 4rem;
+  width: 100%;
+  font-size: 4rem;
 }
+
 .gallery-container .panel {
   width: 90vw;
   flex: 0 0 auto;
@@ -247,21 +259,24 @@ body {
   margin-bottom: 16rem;
 }
 
-.sec-desc-more  {
+.sec-desc-more {
   padding: 10rem 0 !important;
   font-size: 1.8rem;
   line-height: 2;
 }
+
 .sec-desc-more p {
   padding-block-start: 0;
 }
+
 .sec-desc-more h4 {
   font-size: 2.6rem;
-  
+
   max-width: max-content;
   color: var(--clr-blue);
   text-transform: uppercase;
 }
+
 .sec-desc-more h4 span.font-ja {
   font-weight: 900;
   color: var(--clr-black);
@@ -362,12 +377,14 @@ body {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
   }
+
   .gallery-container h4 {
     padding-inline: 2rem;
     top: 2rem;
     width: 100%;
     font-size: 4rem;
-}
+  }
+
   [alt="service-rental-side-02"] {
     position: static;
     display: block;
@@ -376,6 +393,7 @@ body {
     width: 80%;
     border-radius: 2rem;
   }
+
   [alt="service-rental-side-03"] {
     position: static;
     display: block;
@@ -444,12 +462,13 @@ body {
   .gallery-container .panel:nth-child(even) img:nth-of-type(2) {
     display: none;
   }
+
   .gallery-container h4 {
     padding-inline: 2rem;
     top: -2rem;
     width: 100%;
     font-size: 2.6rem;
-}
+  }
 
   .rental-more {
     width: 100%;
@@ -457,7 +476,8 @@ body {
     background-position: 70% center;
     background-size: cover;
   }
+
   .sec-rental-desc h4 {
     font-size: 2.8rem;
-}
+  }
 }
