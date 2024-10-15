@@ -310,18 +310,37 @@ $(document).ready(function () {
     speed: 20000,
     allowTouchMove: false,
   });
-  var flatGallery = new Swiper('.sec-flat-gallery', {
-    spaceBetween: 0,
-    slidesPerView: 1,
-    //centeredSlides: true,
+
+  var flatGallery = new Swiper('.sec-good-gallery', {
+    spaceBetween: 20,
     loop: true,
+    speed: 14000, // Speed remains constant for smooth scrolling
+    allowTouchMove: false, // Disable manual swipe interaction
+
+    // Autoplay setup for smooth horizontal movement
     autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
+      delay: 0, // Immediate autoplay without delay
+      disableOnInteraction: false, // Continue autoplay even on interaction
+      waitForTransition: false, // Ensures continuous scrolling without waiting
     },
-    speed: 20000,
-    allowTouchMove: false,
+
+    // Responsive breakpoints for different screen sizes
+    breakpoints: {
+      320: {
+        slidesPerView: 1.2, // For small mobile screens
+      },
+      768: {
+        slidesPerView: 2.2, // For tablets or small desktops
+      },
+      1024: {
+        slidesPerView: 3.2, // For desktops and larger screens
+      },
+      1440: {
+        slidesPerView: 4.2, // For wider screens
+      },
+    },
   });
+
 
   //service ec
   const sections = $('article.section-group section');

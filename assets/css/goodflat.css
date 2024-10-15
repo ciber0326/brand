@@ -289,12 +289,17 @@ main#goodFlat h3 {
   overflow: hidden;
   transition: 0.3s all ease-in-out;
 }
-
-main#goodFlat .rec-wrapper h3 span.font-en {
+main#goodFlat .sec-rec-cont h3 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--clr-skyBlue);
 }
+
+/* main#goodFlat .rec-wrapper h3 span.font-en {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--clr-skyBlue);
+} */
 
 .goodflat-news-lists li:not(:last-child) {
   margin-bottom: 1.2rem;
@@ -326,6 +331,20 @@ main#goodFlat .btn-view-all {
 main#goodFlat .btn-view-all::before,main#goodFlat  .btn-view-all::after {
   
   left: 10%;
+}
+
+
+/* sec-good-gallery */
+.sec-good-gallery {
+  width: 100%;
+  aspect-ratio: 5 / 1;
+  padding: 0 0 !important;
+}
+.sec-good-gallery .swiper-slide {
+  display: flex;
+}
+.sec-good-gallery .swiper-slide img {
+  border-radius: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -499,5 +518,7 @@ main#goodFlat .btn-view-all::before,main#goodFlat  .btn-view-all::after {
   main#goodFlat .gallery-container h5 {
     margin-block: 0 !important;
   }
-
+  .sec-good-gallery {
+    aspect-ratio: 16 / 9;
+}
 }
