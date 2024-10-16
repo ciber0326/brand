@@ -1,4 +1,4 @@
-#companyPage h3{
+#companyPage h3 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 4rem;
@@ -7,56 +7,69 @@
 #companyPage section {
     padding: 14rem 0 4rem;
 }
+
 #companyPage section h3 {
     text-align: left;
     text-transform: uppercase;
 }
+
 .sec-company-bio {
     padding: 14rem 0 4rem;
 }
+
 .reward-lists {
     display: flex;
     column-gap: 3rem;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .reward-lists li {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .reward-lists img {
     width: 10rem;
 }
+
 [alt="company-bio-feature"] {
     border-radius: 4.8rem;
     margin: 10rem auto 4.8rem;
     width: 100%;
     display: block;
 }
+
 .bio-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     row-gap: 4rem;
 }
+
 .sec-company-bio h2.bg-title {
     font-size: 5.2rem;
     margin-block-end: 0;
 }
+
 .sec-company-bio h2.bg-title span.font-ja {
     font-size: 0.4em;
 }
+
 .bio-wrapper h2.sm-title {
     font-size: 3.4rem;
     margin-bottom: 0;
 }
+
 .bio-wrapper h2.sm-title span.font-ja {
     font-size: 0.6em;
 }
+
 .bio-wrapper h2.sm-title span.date-bigger {
     font-size: 1.6em;
 }
+
 .sec-company-sentence p {
     line-height: 1.8;
     font-size: 1.8rem;
@@ -69,22 +82,27 @@
     margin-block: 4rem 0;
     border-radius: 2.4rem;
 }
+
 [alt="comapny-building"] {
     width: 40%;
     margin-right: 8rem;
     border-radius: 2.4rem;
 }
+
 .sec-president p {
     line-height: 1.8;
     font-size: 1.8rem;
 }
+
 .sec-president p:has([alt="signature"]) {
     text-align: right;
 }
+
 .sec-president h2 {
     font-size: 3.2rem;
     margin-block-end: 3.2rem;
 }
+
 [alt="img-president"] {
     width: 40%;
     margin-right: 8rem;
@@ -95,35 +113,71 @@
     width: 200px;
     margin-top: 2rem;
 }
+
 .sec-company-outline h3 .font-en {
     font-size: 1.8em;
-   
+
 }
+
 .outline-table {
     width: 40%;
 }
+
 .table-company-outline {
     width: 100%;
+    border: 0.5px solid var(--clr-black);
 }
+
+.table-company-outline .tr {
+    display: grid;
+    grid-template-columns: 12.8rem minmax(0, 1fr);
+}
+
+.table-company-outline .tr:not(:last-child) {
+    border-bottom: 1px solid var(--clr-black);
+}
+
+.table-company-outline .tr>div {
+    padding: 1rem 2rem;
+    vertical-align: middle;
+    /* border: 0.5px solid var(--clr-black); */
+}
+
+.table-company-outline .tr>div:first-child {
+    border-right: 1px solid var(--clr-black);
+}
+
+.table-company-outline .tr>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-grey);
+}
+
 .table-company-outline th {
     background-color: var(--clr-grey);
     width: 22%;
 }
+
 .outline-wrapper {
     display: flex;
     flex-wrap: wrap;
     column-gap: 8rem;
 }
+
 iframe.company-map {
     width: 100%;
     aspect-ratio: 6/7;
-}   
+}
+
 .outline-map {
     width: 50%;
 }
+
 [alt="brand-logo"] {
     width: 100%;
 }
+
 .sec-brand-logo {
     width: 100%;
     aspect-ratio: 4/1;
@@ -132,6 +186,7 @@ iframe.company-map {
     background-size: 100%;
     background-position: 0 0;
 }
+
 .sec-brand-logo h2 {
     color: #fff;
     text-shadow: 1px 1px 4px var(--clr-blue);
@@ -140,18 +195,21 @@ iframe.company-map {
 /* //////////// sec-sdg */
 .sec-sdg {
     line-height: 2;
-    font-size: clamp(14px,2rem,16px);
+    font-size: clamp(14px, 2rem, 16px);
     padding-bottom: 10rem !important;
 }
-.sec-sdg h2{
+
+.sec-sdg h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 4rem;
     text-align: left;
 }
+
 .sec-sdg h2 .font-en {
     font-size: 1.8em;
 }
+
 .sec-sdg .sdg-lists h4 {
     background: var(--clr-grey);
     padding-inline: 4rem;
@@ -159,28 +217,34 @@ iframe.company-map {
     font-size: 2.2rem;
     border-radius: 1.2rem;
 }
+
 .sdg-lists {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 4rem;
     column-gap: 4rem;
     margin-bottom: 4rem;
 }
+
 .sdg-lists li p {
     min-height: 4em;
 }
+
 .sdg-lists ul {
     list-style: circle;
     padding-inline-start: 6rem;
     min-height: 9em;
     display: block;
 }
+
 .sdg-badge-img {
     width: 8rem;
 }
+
 .sdg-badge-lists {
     margin-top: 2rem;
 }
+
 [alt="sec-mark-img"] {
     width: 40%;
     margin-right: 8rem;
@@ -245,9 +309,11 @@ iframe.company-map {
         column-gap: 8rem;
         flex-direction: column;
     }
+
     .outline-table {
         width: 100%;
     }
+
     .table-company-outline {
         width: 100%;
         max-width: 840px;
@@ -255,54 +321,66 @@ iframe.company-map {
         font-size: 16px;
 
     }
+
     .outline-map {
         max-width: 840px;
         margin: 0 auto;
         font-size: 16px;
         width: 100%;
     }
+
     .outline-map p {
         font-size: 16px;
         line-height: 2;
     }
-    
+
 }
+
 @media screen and (max-width: 768px) {
     .sdg-lists {
         grid-template-columns: 100%;
     }
+
     .sec-president p:has([alt="signature"]) {
         text-align: right;
     }
+
     [alt="comapny-building"] {
         width: 50%;
         margin-right: 4rem;
         border-radius: 2.4rem;
         margin-bottom: 4rem;
     }
+
     #companyPage section {
         padding: 6rem 0 2rem;
     }
+
     [alt="img-president"] {
         width: 50%;
         margin-right: 4rem;
         border-radius: 2.4rem;
         margin-bottom: 4rem;
     }
+
     #companyPage h3 {
         line-height: 1.8;
     }
+
     .sec-brand-logo {
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center center;
     }
+
     .bio-wrapper {
         flex-direction: column;
     }
+
     .bio-wrapper h2 {
         font-size: 3rem;
     }
+
     /* .rec-wrapper {
         width: 100%;
         height: unset;
@@ -315,25 +393,45 @@ iframe.company-map {
         padding: 8rem 0;
         aspect-ratio: 3 / 1;
     } */
-    
-}
-@media screen and (max-width: 426px) {
+    .table-company-outline .tr {
+        grid-template-columns: 100%;
+        border: 1px solid var(--clr-black);
+        border-radius: 1.2rem;
+        overflow: hidden;
+    }
+    .table-company-outline .tr>div:first-child {
+        border-right: none;
+    }
+    .table-company-outline .tr:not(:last-child) {
+        
+        margin-block-end: 2rem;
+    }
     .table-company-outline {
-        width: 800px;
-    }   
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    
+
     .bio-wrapper {
         flex-direction: column;
     }
+
     .reward-lists img {
         width: 5rem;
     }
+
     [alt="company-bio-feature"] {
         border-radius: 2.4rem;
         margin: 5rem auto 0;
     }
+
     #companyPage section {
         padding: 2rem 0 2rem;
     }
+
     [alt="comapny-building"] {
         width: 100%;
         margin-right: 0;
@@ -341,22 +439,31 @@ iframe.company-map {
         border-radius: 2.4rem;
         float: right;
     }
+
     #companyPage h2 {
         width: 100%;
     }
+
     [alt="img-president"] {
         width: 100%;
         margin-right: 0;
     }
+
     #companyPage section {
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 16/9;
     }
+
     .bio-wrapper h2 {
         font-size: 2.6rem;
     }
+
     #companyPage h3 {
         font-size: 2rem;
         text-align: center;
         margin-bottom: 0rem;
     }
+    .sec-brand-logo {
+        padding: 8rem 0 !important; 
+    }
+
 }
