@@ -311,17 +311,29 @@ $(document).ready(function () {
     allowTouchMove: false,
   });
 
+  // var swiper = new Swiper('.gallery-employee', {
+  //   spaceBetween: 0,
+  //   slidesPerView: 1,
+  //   //centeredSlides: true,
+  //   loop: true,
+  //   allowTouchMove: false, 
+  //   autoplay: {
+  //     delay: 0,
+  //     disableOnInteraction: false,
+  //   },
+  //   speed: 20000,
+  // });
+
   var flatGallery = new Swiper('.sec-good-gallery', {
     spaceBetween: 20,
     loop: true,
-    speed: 14000, // Speed remains constant for smooth scrolling
+    speed: 5000, // Speed remains constant for smooth scrolling
     allowTouchMove: false, // Disable manual swipe interaction
 
     // Autoplay setup for smooth horizontal movement
     autoplay: {
       delay: 0, // Immediate autoplay without delay
       disableOnInteraction: false, // Continue autoplay even on interaction
-      waitForTransition: false, // Ensures continuous scrolling without waiting
     },
 
     // Responsive breakpoints for different screen sizes
