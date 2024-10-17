@@ -311,18 +311,7 @@ $(document).ready(function () {
     allowTouchMove: false,
   });
 
-  // var swiper = new Swiper('.gallery-employee', {
-  //   spaceBetween: 0,
-  //   slidesPerView: 1,
-  //   //centeredSlides: true,
-  //   loop: true,
-  //   allowTouchMove: false, 
-  //   autoplay: {
-  //     delay: 0,
-  //     disableOnInteraction: false,
-  //   },
-  //   speed: 20000,
-  // });
+
 
   var flatGallery = new Swiper('.sec-good-gallery', {
     spaceBetween: 20,
