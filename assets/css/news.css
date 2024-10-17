@@ -67,8 +67,10 @@
     padding: 0.6rem 1.8rem;
     border-radius: 1rem;
     transition: 0.3s all ease-in-out;
-    width: 20rem;
+    width: 24rem;
+    /* width: fit-content; */
 }
+
 .filter-category .filter-lists li.selected {
     background-color: var(--clr-black);
     color: #ffffff;
