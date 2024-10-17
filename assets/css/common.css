@@ -196,6 +196,9 @@ h2 span.font-ja {
     }
 }
 
+.href-underline {
+    text-decoration: underline;
+}
 .href-more {
     padding: 0 4rem;
 }
